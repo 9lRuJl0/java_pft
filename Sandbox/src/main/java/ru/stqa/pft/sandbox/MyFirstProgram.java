@@ -18,5 +18,11 @@ public class MyFirstProgram {
 		System.out.println("Hello, " + somebody + "!");
 }
 
+    System.out.println("Расстояние между двумя точками на координатной плостокти" + " = " double distance);
+
+    public static double distance(Point p1, Point p2) {
+     double distance = Math.sqrt ((p2.x2 - p1.x1) * (p2.x2 - p1.x1) + (p2.y2 - p1.y1 ) * (p2.y2 * p1.y1));
+	 return distance;
+	}
 	
 }
