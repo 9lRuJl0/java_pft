@@ -12,16 +12,23 @@ public class MyFirstProgram {
 
 		Rectangle r = new Rectangle(4, 6);
 		System.out.println("Площадь пряумоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
+
+
+		Point p1 = new Point(3, 4);
+		Point p2 = new Point(5, 6);
+
+
+		System.out.println("Растояние между точками p1" + " и " + " p2 " + " = " + Point.distance(p1, p2));
 		}
+
 
 	public static void hello(String somebody)  {
 		System.out.println("Hello, " + somebody + "!");
 }
 
-    System.out.println("Расстояние между двумя точками на координатной плостокти" + " = " double distance);
 
     public static double distance(Point p1, Point p2) {
-     double distance = Math.sqrt ((p2.x2 - p1.x1) * (p2.x2 - p1.x1) + (p2.y2 - p1.y1 ) * (p2.y2 * p1.y1));
+     double distance = Math.sqrt ((p2.x - p1.x) * (p2.x - p1.x) + (p2.y - p1.y ) * (p2.y * p1.y));
 	 return distance;
 	}
 	
