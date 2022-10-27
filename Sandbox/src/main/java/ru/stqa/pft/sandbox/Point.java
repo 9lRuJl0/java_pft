@@ -1,5 +1,7 @@
 package ru.stqa.pft.sandbox;
 
+import org.testng.annotations.Test;
+
 public class Point {
     public double x;
     public double y;
