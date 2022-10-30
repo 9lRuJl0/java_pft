@@ -18,6 +18,7 @@ public class GroupCreationTests {
   @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception {
     wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
+    wd.get("http://localhost/addressbook/group.php?new=New+group");
     wd.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     wd.findElement(By.name("user")).click();
     wd.findElement(By.name("user")).clear();
