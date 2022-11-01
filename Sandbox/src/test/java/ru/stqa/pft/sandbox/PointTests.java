@@ -13,9 +13,5 @@ public class PointTests {
 
     }
 
-    public void testDistancePointp2 () {
-        Point p2 = new Point(5, 6);
-
-    }
 }
 
