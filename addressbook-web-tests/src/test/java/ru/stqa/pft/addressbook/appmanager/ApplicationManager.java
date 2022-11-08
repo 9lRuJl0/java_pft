@@ -14,12 +14,18 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     WebDriver wd;
 
+
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+        this.browser = browser;
+    }
 
     public void init() {
-        String browser = BrowserType.FIREFOX;
         if (browser == BrowserType.FIREFOX) {
             wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
         } else if (browser == BrowserType.CHROME) {
