@@ -30,7 +30,7 @@ public class ApplicationManager {
             wd = new FirefoxDriver(new FirefoxOptions().setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
         } else if (browser == BrowserType.CHROME) {
             wd = new ChromeDriver();
-        } else if (browser == BrowserType.IE) ; {
+        } else if (browser == BrowserType.IE)  {
             wd = new InternetExplorerDriver();
         }
 
