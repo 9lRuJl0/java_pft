@@ -18,10 +18,12 @@ public class HelperBase {
 
     protected void type(By locator, String text) {
         click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-    }
+        if (text != null) {
 
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }
+    }
     private void type(GroupData groupData, By locator) {
         type(locator, groupData.getFooter());
     }
