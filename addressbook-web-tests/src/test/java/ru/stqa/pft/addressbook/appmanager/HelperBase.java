@@ -19,9 +19,11 @@ public class HelperBase {
     protected void type(By locator, String text) {
         click(locator);
         if (text != null) {
-
-            wd.findElement(locator).clear();
-            wd.findElement(locator).sendKeys(text);
+            String existringText = wd.findElement(locator).getAttribute("value");
+            if (! text.equals((existringText))) {
+                wd.findElement(locator).clear();
+                wd.findElement(locator).sendKeys(text);
+            }
         }
     }
     private void type(GroupData groupData, By locator) {
