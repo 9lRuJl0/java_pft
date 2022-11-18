@@ -38,14 +38,18 @@ public class СreatingСontact {
   public void testCreatingContact() throws Exception {
 
     gotoAddNew();
-    enterName("Tomas");
-    enterLastName("Anderson");
-    enterCompany();
-    enterNickname();
-    enterTelephone("312-555-0690");
-    enterEmail("test@test.com");
+    fillFormContact(new ContactData("Tomas", "Anderson", "MetaCortex", "NEO", "312-555-0690", "test@test.com"));
     enterSave();
     goOut();
+  }
+
+  private void fillFormContact(ContactData contactData) {
+    enterName(contactData.getFirstname());
+    enterLastName(contactData.getLastname());
+    enterCompany(contactData.getCompany());
+    enterNickname(contactData.getNickname());
+    enterTelephone(contactData.getTelephone());
+    enterEmail(contactData.getEmail());
   }
 
   private void goOut() {
