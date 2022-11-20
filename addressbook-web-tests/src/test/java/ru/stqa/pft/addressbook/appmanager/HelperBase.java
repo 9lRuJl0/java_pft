@@ -20,12 +20,13 @@ public class HelperBase {
         click(locator);
         if (text != null) {
             String existringText = wd.findElement(locator).getAttribute("value");
-            if (! text.equals((existringText))) {
+            if (!text.equals((existringText))) {
                 wd.findElement(locator).clear();
                 wd.findElement(locator).sendKeys(text);
             }
         }
     }
+
     private void type(GroupData groupData, By locator) {
         type(locator, groupData.getFooter());
     }
