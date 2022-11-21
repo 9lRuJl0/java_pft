@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,21 +9,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    WebDriver wd;
-
-
+    protected WebDriver wd;
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     private String browser;
 
-    public ApplicationManager(String browser) {
-        this.browser = browser;
+    private ContactHelper contactHelper;
+
+    public ApplicationManager() {
+
         this.browser = browser;
     }
 
@@ -42,6 +44,7 @@ public class ApplicationManager {
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
         sessionHelper.Login("Admin", "secret");
+        contactHelper.gotoAddNew();
     }
 
 
@@ -50,14 +53,84 @@ public class ApplicationManager {
         wd.quit();
     }
 
-    private boolean isElementPresent(By by) {
-      try {
-        wd.findElement(by);
-        return true;
-      } catch (NoSuchElementException e) {
-        return false;
-      }
+    public void login(String username, String password) {
+        wd.findElement(By.name("user")).click();
+        wd.findElement(By.name("user")).sendKeys(username);
+        wd.findElement(By.id("LoginForm")).click();
+        wd.findElement(By.name("pass")).click();
+        wd.findElement(By.name("pass")).clear();
+        wd.findElement(By.name("pass")).sendKeys(password);
+        wd.findElement(By.xpath("//input[@value='Login']")).click();
     }
+
+    public void fillFormContact(ContactData contactData) {
+        enterName(contactData.getFirstname());
+        enterLastName(contactData.getLastname());
+        enterCompany(contactData.getCompany());
+        enterNickname(contactData.getNickname());
+        enterTelephone(contactData.getTelephone());
+        enterEmail(contactData.getEmail());
+    }
+
+    public void goOut() {
+        wd.findElement(By.linkText("home")).click();
+        wd.findElement(By.linkText("Logout")).click();
+        wd.findElement(By.name("user")).clear();
+        wd.findElement(By.name("user")).sendKeys("Admin");
+    }
+
+    public void enterSave() {
+        wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
+    }
+
+    private void enterEmail(String email) {
+        wd.findElement(By.name("email")).click();
+        wd.findElement(By.name("email")).clear();
+        wd.findElement(By.name("email")).sendKeys(email);
+    }
+
+    private void enterTelephone(String telephone) {
+        wd.findElement(By.name("home")).click();
+        wd.findElement(By.name("home")).clear();
+        wd.findElement(By.name("home")).sendKeys(telephone);
+    }
+
+    private void enterNickname(String nickname) {
+        wd.findElement(By.name("nickname")).click();
+        wd.findElement(By.name("nickname")).clear();
+        wd.findElement(By.name("nickname")).sendKeys(nickname);
+    }
+
+    private void enterCompany(String company) {
+        wd.findElement(By.name("company")).click();
+        wd.findElement(By.name("company")).clear();
+        wd.findElement(By.name("company")).sendKeys(company);
+    }
+
+    private void enterLastName(String lastname) {
+        wd.findElement(By.name("lastname")).click();
+        wd.findElement(By.name("lastname")).clear();
+        wd.findElement(By.name("lastname")).sendKeys(lastname);
+    }
+
+    private void enterName(String firstname) {
+        wd.findElement(By.name("firstname")).click();
+        wd.findElement(By.name("firstname")).clear();
+        wd.findElement(By.name("firstname")).sendKeys(firstname);
+    }
+
+    public void gotoAddNew() {
+        wd.findElement(By.linkText("add new")).click();
+    }
+
+//    private boolean isElementPresent(By by) {
+//      try {
+//        wd.findElement(by);
+//        return true;
+//      } catch (NoSuchElementException e) {
+//        return false;
+//      }
+//    }
 
 
     public GroupHelper getGroupHelper() {
@@ -66,5 +139,26 @@ public class ApplicationManager {
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
+    }
+
+
+    public ContactHelper getContactHelper() {return contactHelper; }
+
+    private boolean isElementPresent(By by) {
+        try {
+            wd.findElement(by);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    private boolean isAlertPresent() {
+        try {
+            wd.switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
     }
 }
