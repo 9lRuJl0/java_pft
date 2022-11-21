@@ -23,8 +23,8 @@ public class ApplicationManager {
 
     private ContactHelper contactHelper;
 
-    public ApplicationManager() {
 
+    public ApplicationManager(String browser) {
         this.browser = browser;
     }
 
@@ -83,37 +83,37 @@ public class ApplicationManager {
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    private void enterEmail(String email) {
+    public void enterEmail(String email) {
         wd.findElement(By.name("email")).click();
         wd.findElement(By.name("email")).clear();
         wd.findElement(By.name("email")).sendKeys(email);
     }
 
-    private void enterTelephone(String telephone) {
+    public void enterTelephone(String telephone) {
         wd.findElement(By.name("home")).click();
         wd.findElement(By.name("home")).clear();
         wd.findElement(By.name("home")).sendKeys(telephone);
     }
 
-    private void enterNickname(String nickname) {
+    public void enterNickname(String nickname) {
         wd.findElement(By.name("nickname")).click();
         wd.findElement(By.name("nickname")).clear();
         wd.findElement(By.name("nickname")).sendKeys(nickname);
     }
 
-    private void enterCompany(String company) {
+    public void enterCompany(String company) {
         wd.findElement(By.name("company")).click();
         wd.findElement(By.name("company")).clear();
         wd.findElement(By.name("company")).sendKeys(company);
     }
 
-    private void enterLastName(String lastname) {
+    public void enterLastName(String lastname) {
         wd.findElement(By.name("lastname")).click();
         wd.findElement(By.name("lastname")).clear();
         wd.findElement(By.name("lastname")).sendKeys(lastname);
     }
 
-    private void enterName(String firstname) {
+    public void enterName(String firstname) {
         wd.findElement(By.name("firstname")).click();
         wd.findElement(By.name("firstname")).clear();
         wd.findElement(By.name("firstname")).sendKeys(firstname);
