@@ -15,7 +15,6 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("Logout"));
     }
 
-
     public void gotoEnter() {
 
        click(By.xpath("//div[@id='content']/form/input[21]"));
@@ -34,6 +33,7 @@ public class ContactHelper extends HelperBase {
         wd.findElement(locator).click();
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
+
     }
 
     public void gotoAddNew() {
@@ -41,12 +41,9 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    public void selectId() {
-        click(By.linkText("id"));
-    }
-
     public void selectDelete() {
-        click(By.linkText("delete"));
+
+        click(By.xpath("//input[@value='Delete']"));
     }
 
     public void switchTo() {
@@ -55,11 +52,17 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectEdit() {
-        click(By.linkText("edit"));
+        click(By.xpath("//img[@alt='Edit']"));
     }
 
     public void selectUpdate() {
-        click(By.linkText("update"));
+        click(By.name("update"));
+
+    }
+
+    public void selectId(By id) {
+
+        click(By.id("3"));
 
     }
 }

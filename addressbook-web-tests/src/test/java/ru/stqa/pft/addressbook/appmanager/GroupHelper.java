@@ -26,10 +26,12 @@ public class GroupHelper extends HelperBase{
     }
 
     public void initGroupCreation() {
+
         click(By.name("new"));
     }
 
     public void deleteSelectedGroups() {
+
         click(By.xpath("//div[@id='content']/form/input[5]"));
     }
 
