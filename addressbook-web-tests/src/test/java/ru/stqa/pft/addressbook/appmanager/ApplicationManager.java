@@ -19,7 +19,7 @@ public class ApplicationManager {
 
     public void init() {
         wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/group.php?selected%5B%5D=13&selected%5B%5D=9&selected%5B%5D=8&selected%5B%5D=10&selected%5B%5D=11&selected%5B%5D=14&delete=Delete+group%28s%29");
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
