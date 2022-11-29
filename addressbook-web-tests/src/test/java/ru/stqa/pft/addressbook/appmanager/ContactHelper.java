@@ -15,10 +15,6 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("Logout"));
     }
 
-    public void gotoHomePage() {
-
-        click(By.linkText("home page"));
-    }
 
     public void gotoEnter() {
 
@@ -43,5 +39,27 @@ public class ContactHelper extends HelperBase {
     public void gotoAddNew() {
 
         click(By.linkText("add new"));
+    }
+
+    public void selectId() {
+        click(By.linkText("id"));
+    }
+
+    public void selectDelete() {
+        click(By.linkText("delete"));
+    }
+
+    public void switchTo() {
+        wd.switchTo().alert().accept();
+
+    }
+
+    public void selectEdit() {
+        click(By.linkText("edit"));
+    }
+
+    public void selectUpdate() {
+        click(By.linkText("update"));
+
     }
 }
