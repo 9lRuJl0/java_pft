@@ -52,17 +52,19 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectEdit() {
+
         click(By.xpath("//img[@alt='Edit']"));
     }
 
     public void selectUpdate() {
+
         click(By.name("update"));
 
     }
 
-    public void selectId(By id) {
+    public void selectId() {
 
-        click(By.id("3"));
+        click(By.xpath("//td/input"));
 
     }
 }
