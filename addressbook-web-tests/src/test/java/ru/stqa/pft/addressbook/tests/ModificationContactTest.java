@@ -11,7 +11,7 @@ public class ModificationContactTest  extends TestBase {
         app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().selectId();
         app.getContactHelper().selectEdit();
-        app.getContactHelper().fillContactForm(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com"));
+        app.getContactHelper().fillContactForm(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", null), false);
         app.getContactHelper().selectUpdate();
         app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().gotoLogOut();
