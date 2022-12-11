@@ -74,7 +74,17 @@ public class ContactHelper extends HelperBase {
             click(By.xpath("//td/input"));
 
         }
+
+    public void createContact(ContactData contact) {
+        gotoAddNew();
+        fillContactForm(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", "test1"), true);
+        gotoEnter();
     }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.xpath("//td/input"));
+    }
+}
 
 
 
