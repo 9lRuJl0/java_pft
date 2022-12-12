@@ -77,7 +77,7 @@ public class ContactHelper extends HelperBase {
 
     public void createContact(ContactData contact) {
         gotoAddNew();
-        fillContactForm(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", "test1"), true);
+        fillContactForm(contact, true);
         gotoEnter();
     }
 
