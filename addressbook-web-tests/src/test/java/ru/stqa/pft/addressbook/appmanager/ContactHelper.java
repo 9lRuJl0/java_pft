@@ -84,7 +84,15 @@ public class ContactHelper extends HelperBase {
     public boolean isThereAContact() {
         return isElementPresent(By.xpath("//td/input"));
     }
+
+
+
+    public boolean isThereASelectGroups() {
+        click((By.name("new_group")));
+        return isElementPresent((By.name("test1")));
+    }
 }
+
 
 
 
