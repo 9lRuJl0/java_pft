@@ -91,6 +91,12 @@ public class ContactHelper extends HelperBase {
         click((By.name("new_group")));
         return isElementPresent((By.name("test1")));
     }
+
+    public boolean selectGroups() {
+        click((By.xpath("//option[@value='27']")));
+        return isElementPresent((By.name("test1")));
+
+    }
 }
 
 
