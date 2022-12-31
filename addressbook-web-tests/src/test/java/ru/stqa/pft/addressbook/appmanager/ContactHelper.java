@@ -97,6 +97,7 @@ public class ContactHelper extends HelperBase {
         return isElementPresent((By.name("test1")));
 
     }
+
 }
 
 
