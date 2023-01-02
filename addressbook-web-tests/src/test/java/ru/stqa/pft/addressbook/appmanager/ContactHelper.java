@@ -70,8 +70,8 @@ public class ContactHelper extends HelperBase {
         }
 
         public void selectId () {
-
-            click(By.xpath("//td/input"));
+            click(By.name("selected[]"));
+            //click(By.xpath("//td/input"));
 
         }
 
@@ -82,23 +82,23 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean isThereAContact() {
-        return isElementPresent(By.xpath("//td/input"));
+        return isElementPresent(By.name("selected[]"));
     }
 
 
 
-    public boolean isThereASelectGroups() {
-        click((By.name("new_group")));
-        return isElementPresent((By.name("test1")));
-    }
-
-    public boolean selectGroups() {
-        click((By.xpath("//option[@value='27']")));
-        return isElementPresent((By.name("test1")));
-
-    }
+//    public boolean isThereASelectGroup() {
+//        click((By.name("new_group")));
+//        return isElementPresent((By.name("test1")));
+//    }
+//
+//    public boolean selectGroups() {
+//        click((By.xpath("//option[@value='27']")));
+//        return isElementPresent((By.name("test1")));
 
 }
+
+
 
 
 

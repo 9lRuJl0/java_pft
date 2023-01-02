@@ -9,16 +9,12 @@ public class CreationContactTest extends TestBase {
 
   @Test
   public void testCreationContact() throws Exception {
-
-    app.getContactHelper().gotoAddNew();
-    if (! app.getContactHelper().isThereASelectGroups()) ;
-    {
-      app.getNavigationHelper().gotoGroupPage();
+    app.getNavigationHelper().gotoGroupPage();
+    if (! app.getGroupHelper().isThereAGroup()) {
       app.getGroupHelper().createGroup(new GroupData("test1", null, null));
-      app.getContactHelper().gotoAddNew();
     }
-
+    app.getContactHelper().gotoAddNew();
     app.getContactHelper().fillContactForm(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", "test1"), true);
-
+    app.getContactHelper().gotoEnter();
   }
 }

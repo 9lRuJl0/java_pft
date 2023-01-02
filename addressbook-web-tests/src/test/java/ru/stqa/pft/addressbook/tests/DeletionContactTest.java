@@ -7,8 +7,6 @@ public class DeletionContactTest extends TestBase {
 
     @Test
     public void testDeletionContact() {
-
-
         if (! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", "test1"));
         }
