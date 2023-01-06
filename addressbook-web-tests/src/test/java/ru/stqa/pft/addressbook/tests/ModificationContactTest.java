@@ -6,15 +6,16 @@ import ru.stqa.pft.addressbook.model.GroupData;
 
 public class ModificationContactTest  extends TestBase {
 
+    String groupName = "test3";
     @Test
     public void testModificationContact() {
         app.getNavigationHelper().gotoGroupPage();
-        if (!app.getGroupHelper().isThereAGroup()) {
-            app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+        if (!app.getGroupHelper().isThereAGroup(groupName)) {
+            app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
             app.getNavigationHelper().gotoHomePage();
         }
             if (!app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", "test1"));
+            app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName));
             }
             app.getNavigationHelper().gotoHomePage();
             app.getContactHelper().selectId();
