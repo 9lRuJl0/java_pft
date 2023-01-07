@@ -5,7 +5,7 @@ import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 public class DeletionContactTest extends TestBase {
-    String groupName = "test2";
+    String groupName = "test1";
     @Test
     public void testDeletionContact() {
         app.getNavigationHelper().gotoGroupPage();

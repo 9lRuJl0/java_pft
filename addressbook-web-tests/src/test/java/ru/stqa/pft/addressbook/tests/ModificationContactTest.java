@@ -6,7 +6,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 
 public class ModificationContactTest  extends TestBase {
 
-    String groupName = "test3";
+    String groupName = "test1";
     @Test
     public void testModificationContact() {
         app.getNavigationHelper().gotoGroupPage();

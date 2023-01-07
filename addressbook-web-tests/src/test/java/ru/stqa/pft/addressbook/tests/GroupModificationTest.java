@@ -7,7 +7,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import java.util.List;
 
 public class GroupModificationTest extends TestBase {
-    String groupName = "test3";
+    String groupName = "test1";
     @Test
 
     public void testGroupModification() {
