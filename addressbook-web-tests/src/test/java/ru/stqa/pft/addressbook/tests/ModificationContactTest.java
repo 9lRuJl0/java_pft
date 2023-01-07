@@ -10,11 +10,11 @@ public class ModificationContactTest  extends TestBase {
     @Test
     public void testModificationContact() {
         app.getNavigationHelper().gotoGroupPage();
-        if (!app.getGroupHelper().isThereAGroup(groupName)) {
+        if (! app.getGroupHelper().isThereAGroup(groupName)) {
             app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
             app.getNavigationHelper().gotoHomePage();
         }
-            if (!app.getContactHelper().isThereAContact()) {
+            if (! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName));
             }
             app.getNavigationHelper().gotoHomePage();

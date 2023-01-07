@@ -11,6 +11,7 @@ public class DeletionContactTest extends TestBase {
         app.getNavigationHelper().gotoGroupPage();
         if (! app.getGroupHelper().isThereAGroup(groupName)) {
             app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
+            app.getNavigationHelper().gotoHomePage();
         } if (! app.getContactHelper().isThereAContact()) {
                 app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName));
             }

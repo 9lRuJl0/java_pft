@@ -79,6 +79,7 @@ public class ContactHelper extends HelperBase {
         gotoAddNew();
         fillContactForm(contact, true);
         gotoEnter();
+
     }
 
     public boolean isThereAContact() {
