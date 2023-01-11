@@ -2,11 +2,19 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ContactHelper extends HelperBase {
+
+
+    private boolean creation;
+
     public ContactHelper(WebDriver wd) {
 
         super(wd);
@@ -22,7 +30,7 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void fillContactForm(ContactData contactData, boolean creation) {
+    public void fillContactForm(ContactData contactData) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("nickname"), contactData.getNickname());
@@ -69,35 +77,44 @@ public class ContactHelper extends HelperBase {
 
         }
 
-        public void selectId () {
-           click(By.name("selected[]"));
-
-            //click(By.xpath("//td/input"));
+        public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
         }
 
     public void createContact(ContactData contact) {
         gotoAddNew();
-        fillContactForm(contact, true);
+        fillContactForm(contact);
         gotoEnter();
 
     }
 
     public boolean isThereAContact() {
+
         return isElementPresent(By.name("selected[]"));
     }
 
+    String groupName = "test1";
+
+    public List<ContactData> getContactList() {
+        List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = wd.findElements(By.name("entry"));
+        for (WebElement element : elements ) {
+            String name = element.getText();
+            int id =Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            ContactData сontact = new ContactData(id,"Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName);
+            contacts.add(сontact);
+        }
+        return  contacts;
+    }
 
 
-//    public boolean isThereASelectGroup() {
-//        click((By.name("new_group")));
-//        return isElementPresent((By.name("test1")));
-//    }
-//
-//    public boolean selectGroups() {
-//        click((By.xpath("//option[@value='27']")));
-//        return isElementPresent((By.name("test1")));
-
+    public int getContactCount() {
+       return wd.findElements(By.name("selected[]")).size();
+    }
 }
+
+
+
 
 
 
