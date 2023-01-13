@@ -20,7 +20,7 @@ public class CreationContactTest extends TestBase {
     }
     app.getContactHelper().gotoAddNew();
     ContactData contact = new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName);
-    app.getContactHelper().fillContactForm(contact);
+    app.getContactHelper().fillContactForm(contact, true);
     app.getContactHelper().gotoEnter();
     List<ContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size() + 1);

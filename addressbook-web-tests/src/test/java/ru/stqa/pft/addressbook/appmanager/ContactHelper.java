@@ -83,7 +83,7 @@ public class ContactHelper extends HelperBase {
 
     public void createContact(ContactData contact) {
         gotoAddNew();
-        fillContactForm(contact);
+        fillContactForm(contact, true);
         gotoEnter();
 
     }
