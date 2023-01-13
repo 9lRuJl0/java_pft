@@ -13,7 +13,6 @@ import java.util.List;
 public class ContactHelper extends HelperBase {
 
 
-    private boolean creation;
 
     public ContactHelper(WebDriver wd) {
 
@@ -30,13 +29,14 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[21]"));
     }
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("nickname"), contactData.getNickname());
         type(By.name("company"), contactData.getCompany());
         type(By.name("home"), contactData.getTelephone());
         type(By.name("email"), contactData.getEmail());
+
 
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
@@ -100,8 +100,14 @@ public class ContactHelper extends HelperBase {
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements ) {
             String name = element.getText();
-            int id =Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            ContactData сontact = new ContactData(id,"Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName);
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            String firstName = wd.findElement(By.xpath("input[@name='firstname']")).getText();
+            String lastname = wd.findElement(By.xpath("input[@name='lastname']")).getText();
+            String nickname = wd.findElement(By.xpath("input[@name='nickname']")).getText();
+            String company = wd.findElement(By.xpath("input[@name='company']")).getText();
+            String telephone = wd.findElement(By.xpath("input[@name='telephone']")).getText();
+            String email = wd.findElement(By.xpath("input[@name='email']")).getText();
+            ContactData сontact = new ContactData(id, firstName, lastname, nickname, company, telephone, email, groupName);
             contacts.add(сontact);
         }
         return  contacts;
