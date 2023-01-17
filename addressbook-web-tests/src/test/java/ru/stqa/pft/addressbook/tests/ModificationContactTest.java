@@ -14,22 +14,22 @@ public class ModificationContactTest  extends TestBase {
     @Test
     public void testModificationContact() {
 
-        app.getNavigationHelper().gotoGroupPage();
-        if (! app.getGroupHelper().isThereAGroup(groupName)) {
-            app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
-            app.getNavigationHelper().gotoHomePage();
+        app.goTo().groupPage();
+        if (! app.group().isThereAGroup(groupName)) {
+            app.group().create(new GroupData().withName(groupName));
+            app.goTo().gotoHomePage();
         }
             if (! app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName));
             }
-            app.getNavigationHelper().gotoHomePage();
+            app.goTo().gotoHomePage();
             List<ContactData> before = app.getContactHelper().getContactList();
             app.getContactHelper().selectContact(before.size() - 1);
             app.getContactHelper().selectEdit();
-            ContactData contact = new ContactData(before.get(before.size() - 1).getId(), "Ярослав", "Сорокин", "9RuJl0", "MetaCortex", "312-555-0690", "test@test.com", null);
+            ContactData contact = new ContactData(before.get(before.size() - 1).getId(), "Yaroslav", "Sorokin", "9RuJl0", "MetaCortex", "312-555-0690", "test@test.com", null);
             app.getContactHelper().fillContactForm(contact, false);
             app.getContactHelper().selectUpdate();
-            app.getNavigationHelper().gotoHomePage();
+            app.goTo().gotoHomePage();
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(after.size(), before.size());
         before.remove(before.size() - 1);

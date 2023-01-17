@@ -25,6 +25,7 @@ public class ApplicationManager {
     public ApplicationManager(String browser) {
         this.browser = browser;
     }
+
     public void init() {
         if (Objects.equals(browser, BrowserType.FIREFOX)) {
             wd = new FirefoxDriver();
@@ -58,11 +59,11 @@ public class ApplicationManager {
         wd.quit();
     }
 
-    public GroupHelper getGroupHelper() {
+    public GroupHelper group() {
         return groupHelper;
     }
 
-    public NavigationHelper getNavigationHelper() {
+    public NavigationHelper goTo() {
         return navigationHelper;
     }
 

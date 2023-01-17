@@ -14,15 +14,15 @@ public class CreationContactTest extends TestBase {
   @Test
   public void testCreationContact() throws Exception {
     List<ContactData> before = app.getContactHelper().getContactList();
-    app.getNavigationHelper().gotoGroupPage();
-    if (! app.getGroupHelper().isThereAGroup(groupName)) {
-      app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
+    app.goTo().groupPage();
+    if (! app.group().isThereAGroup(groupName)) {
+      app.group().create(new GroupData().withName(groupName));
     }
     app.getContactHelper().gotoAddNew();
     ContactData contact = new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName);
     app.getContactHelper().fillContactForm(contact, true);
     app.getContactHelper().gotoEnter();
-    app.getNavigationHelper().gotoHomePage();
+    app.goTo().gotoHomePage();
     List<ContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size() + 1);
 

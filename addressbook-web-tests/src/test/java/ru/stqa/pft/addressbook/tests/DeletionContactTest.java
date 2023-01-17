@@ -11,14 +11,14 @@ public class DeletionContactTest extends TestBase {
     String groupName = "test1";
     @Test
     public void testDeletionContact() {
-        app.getNavigationHelper().gotoGroupPage();
-        if (! app.getGroupHelper().isThereAGroup(groupName)) {
-            app.getGroupHelper().createGroup(new GroupData(groupName, null, null));
-            app.getNavigationHelper().gotoHomePage();
+        app.goTo().groupPage();
+        if (! app.group().isThereAGroup(groupName)) {
+            app.group().create(new GroupData().withName(groupName));
+            app.goTo().gotoHomePage();
         } if (! app.getContactHelper().isThereAContact()) {
                 app.getContactHelper().createContact(new ContactData("Tomas", "Anderson", "NEO", "MetaCortex", "312-555-0690", "test@test.com", groupName));
             }
-            app.getNavigationHelper().gotoHomePage();
+            app.goTo().gotoHomePage();
         List<ContactData> before = app.getContactHelper().getContactList();
         System.out.println(before.size());
             app.getContactHelper().selectContact(before.size() - 1);
