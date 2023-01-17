@@ -78,8 +78,11 @@ public class ContactHelper extends HelperBase {
         }
 
         public void selectContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
+        if (wd.findElements(By.name("selected[]")).size() >= index) {
+            wd.findElements(By.name("selected[]")).get(index).click();
         }
+
+    }
 
     public void createContact(ContactData contact) {
         gotoAddNew();
@@ -99,15 +102,17 @@ public class ContactHelper extends HelperBase {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements ) {
-            String name = element.getText();
+           // String  name = element.getText();
+            String lastname = element.findElement(By.xpath("//td[1]")).getText();
+            String firstName = element.findElement(By.xpath("//td[2]")).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            String firstName = wd.findElement(By.xpath("input[@name='firstname']")).getText();
-            String lastname = wd.findElement(By.xpath("input[@name='lastname']")).getText();
-            String nickname = wd.findElement(By.xpath("input[@name='nickname']")).getText();
-            String company = wd.findElement(By.xpath("input[@name='company']")).getText();
-            String telephone = wd.findElement(By.xpath("input[@name='telephone']")).getText();
-            String email = wd.findElement(By.xpath("input[@name='email']")).getText();
-            ContactData сontact = new ContactData(id, firstName, lastname, nickname, company, telephone, email, groupName);
+//            String firstName = wd.findElement(By.xpath("input[@name='firstname']")).getText();
+//            String lastname = wd.findElement(By.xpath("input[@name='lastname']")).getText();
+//            String nickname = wd.findElement(By.xpath("input[@name='nickname']")).getText();
+//            String company = wd.findElement(By.xpath("input[@name='company']")).getText();
+//            String telephone = wd.findElement(By.xpath("input[@name='telephone']")).getText();
+//            String email = wd.findElement(By.xpath("input[@name='email']")).getText();
+            ContactData сontact = new ContactData(id, lastname, firstName, null, null, null, null, null);
             contacts.add(сontact);
         }
         return  contacts;
@@ -115,7 +120,8 @@ public class ContactHelper extends HelperBase {
 
 
     public int getContactCount() {
-       return wd.findElements(By.name("selected[]")).size();
+
+        return wd.findElements(By.name("selected[]")).size();
     }
 }
 

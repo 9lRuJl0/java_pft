@@ -33,6 +33,8 @@ public class ContactData {
         this.telephone = telephone;
         this.email = email;
         this.group = group;
+
+
     }
 
     public int getId() {
