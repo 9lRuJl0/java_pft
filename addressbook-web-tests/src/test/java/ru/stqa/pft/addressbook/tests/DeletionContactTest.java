@@ -16,8 +16,9 @@ public class DeletionContactTest extends TestBase {
         app.goTo().groupPage();
         if (! app.group().isThereAGroup(groupName)) {
             app.group().create(new GroupData().withName(groupName));
-            app.goTo().gotoHomePage();
+
         }
+        app.goTo().gotoHomePage();
         if (app.contact().all().size() == 0) {
             app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson").withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withEmail("test@test.com").withGroup(groupName));
 
@@ -27,7 +28,6 @@ public class DeletionContactTest extends TestBase {
     String groupName = "test1";
     @Test
     public void testDeletionContact() {
-        app.goTo().gotoHomePage();
         Contacts before = app.contact().all();
         ContactData deleteContact = before.iterator().next();
         app.contact().delete(deleteContact);
