@@ -83,6 +83,16 @@ public class ContactData {
         return this;
     }
 
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -94,15 +104,6 @@ public class ContactData {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstname, lastname);
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
     }
 
     @Override
