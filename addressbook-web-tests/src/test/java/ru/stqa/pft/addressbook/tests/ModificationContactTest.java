@@ -17,8 +17,8 @@ public class ModificationContactTest  extends TestBase {
         if (! app.group().isThereAGroup(groupName)) {
             app.group().create(new GroupData().withName(groupName));
         }
+        // Выполнение предусловия создания контакта
         app.goTo().gotoHomePage();
-        //System.out.println(app.contact().all().size());
         if (app.contact().all().size() == 0) {
             app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson").withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withEmail("test@test.com").withGroup(groupName));
 

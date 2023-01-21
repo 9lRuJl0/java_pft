@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
@@ -28,8 +27,8 @@ public class GroupCreationTest extends TestBase {
   }
 
 
-  @Ignore
-  @Test
+
+  @Test (enabled = false)
   public void testBadGroupCreation() throws Exception {
 
     app.goTo().groupPage();
