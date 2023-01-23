@@ -37,14 +37,13 @@ public class ContactPhoneTest  extends TestBase {
     public void testContactPhones() {
         app.goTo().gotoHomePage();
         ContactData contact = app.contact().all().iterator().next();
-        //   app.contactHelper.selectEdit();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
         MatcherAssert.assertThat(contact.getAllPhones(), CoreMatchers.equalTo(mergePhones(contactInfoFromEditForm)));
     }
 
     private String mergePhones(ContactData contact) {
         return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone())
-                .stream().filter((s) -> ! s.equals(""))
+                .stream().filter((s) -> s != null && ! s.equals(""))
                 .map(ContactPhoneTest::cleaned)
                 .collect(Collectors.joining("\n"));
     }

@@ -157,8 +157,8 @@ public class ContactHelper extends HelperBase {
 
     public ContactData infoFromEditForm(ContactData contact) {
         initContactModificationById(contact.getId());
-        String firstmane = wd.findElement(By.name("firstmane")).getAttribute("value");
-        String lastmane = wd.findElement(By.name("lastmane")).getAttribute("value");
+        String firstmane = wd.findElement(By.name("firstname")).getAttribute("value");
+        String lastmane = wd.findElement(By.name("lastname")).getAttribute("value");
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
