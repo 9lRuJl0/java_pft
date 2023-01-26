@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -17,8 +18,12 @@ public class ContactData {
     private String allPhones;
     private String email2;
     private String email3;
-    private String allemail;
-    private String adress;
+
+    private String allEmail;
+    private String address;
+
+    private String faxPhone;
+    private File photo;
 
 
 
@@ -31,28 +36,20 @@ public class ContactData {
         return firstname;
     }
     public String getLastname() {
-
         return lastname;
     }
-    public String getNickname() {
-
-        return nickname;
-    }
+    public String getNickname() { return nickname; }
     public String getCompany() {
-
         return company;
     }
     public String getTelephone() {
-
         return telephone;
     }
     public String getEmail() {
-
         return email;
     }
 
     public String getGroup() {
-
         return group;
     }
     public String getHomePhone() {
@@ -67,21 +64,21 @@ public class ContactData {
     public String getAllPhones() {
         return allPhones;
     }
-
     public String getEmail2() {
         return email2;
     }
-
     public String getEmail3() {
         return email3;
     }
-
     public String getAllemail() {
-        return allemail;
+        return allEmail;
+    }
+    public String getAddress() {
+        return address;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getFaxPhone() {
+        return faxPhone;
     }
 
 
@@ -126,10 +123,11 @@ public class ContactData {
         this.group = group;
         return this;
     }
-    public ContactData withHomePhone(String home) {
+    public ContactData withHomePhone(String homePhone) {
         this.homePhone = homePhone;
         return this;
     }
+
     public ContactData withMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
         return this;
@@ -154,14 +152,38 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withAllemail(String allemail) {
-        this.allemail = allemail;
+    public ContactData withAllEmail(String allEmail) {
+        this.allEmail = allEmail;
         return this;
     }
 
-    public ContactData withAdress(String adress) {
-        this.adress = adress;
+    public ContactData withAddress(String address) {
+        this.address = address;
         return this;
+    }
+
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
+
+
+    public ContactData withFaxPhone(String faxPhone) {
+        this.faxPhone = faxPhone;
+        return this;
+}
+
+
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", allPhones='" + allPhones + '\'' +
+                '}';
     }
 
 
@@ -170,21 +192,12 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(allPhones, that.allPhones);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname);
-    }
-
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id=" + id +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                '}';
+        return Objects.hash(id, firstname, lastname, allPhones);
     }
 
 

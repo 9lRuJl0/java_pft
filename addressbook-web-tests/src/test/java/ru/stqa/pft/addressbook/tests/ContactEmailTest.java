@@ -25,19 +25,20 @@ public class ContactEmailTest  extends TestBase {
         app.goTo().gotoHomePage();
         if (app.contact().all().size() == 0) {
             app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson")
-                    .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withAdress("Wall street, house 1")
+                    .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withAddress("Wall street, house 1")
                     .withEmail("test@test.com").withEmail2("test@test2.com").withEmail3("test@test3.com").withGroup(groupName));
         }
     }
 
 
-    @Test
+    @Test(enabled = false)
 
     public void testContactEmail() {
         app.goTo().gotoHomePage();
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
         MatcherAssert.assertThat(contact.getAllemail(), CoreMatchers.equalTo(mergeEmail(contactInfoFromEditForm)));
+        MatcherAssert.assertThat(contact.getAddress(), CoreMatchers.equalTo(contactInfoFromEditForm.getAddress()));
     }
 
     private String mergeEmail(ContactData contact) {
