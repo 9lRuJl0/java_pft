@@ -29,6 +29,7 @@ public class ContactData {
 
 
 
+
     public int getId() {
         return id;
     }
@@ -76,9 +77,12 @@ public class ContactData {
     public String getAddress() {
         return address;
     }
-
     public String getPhone2() {
         return phone2  ;
+    }
+
+    public File getPhoto() {
+        return photo;
     }
 
 
@@ -166,8 +170,6 @@ public class ContactData {
         this.photo = photo;
         return this;
     }
-
-
 
     public ContactData withPhone2(String phone2) {
         this.phone2 = phone2;

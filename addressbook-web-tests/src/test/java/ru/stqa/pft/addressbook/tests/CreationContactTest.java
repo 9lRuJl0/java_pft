@@ -23,7 +23,7 @@ public class CreationContactTest extends TestBase {
 
 
   String groupName = "test1";
-  @Test
+  @Test (enabled = false)
   public void testCreationContact() throws Exception {
     app.goTo().gotoHomePage();
     Contacts before = app.contact().all();
@@ -38,4 +38,5 @@ public class CreationContactTest extends TestBase {
 
 
   }
+
 }

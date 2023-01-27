@@ -168,11 +168,12 @@ public class ContactHelper extends HelperBase {
         String email2 = wd.findElement(By.name("email2")).getAttribute("value");
         String email3 = wd.findElement(By.name("email3")).getAttribute("value");
         String allPhones = home + "\n" + mobile + "\n" + work;
+        String phone2 = wd.findElement(By.name("phone2")).getAttribute("value");
 
         wd.navigate().back();
         return new ContactData().withId(contact.getId())
                 .withLastname(lastname).withFirstname(firstname)
-                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withAllPhones(allPhones)
+                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withAllPhones(allPhones).withPhone2(phone2)
                 .withAddress(address).withEmail(email).withEmail2(email2).withEmail3(email3);
     }
 
