@@ -1,0 +1,29 @@
+<list>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstname>Tomas</firstname>
+    <lastname>Anderson</lastname>
+    <nickname>NEO</nickname>
+    <company>MetaCortex</company>
+    <telephone>312-555-0690</telephone>
+    <email>test@test.com</email>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstname>Tomas</firstname>
+    <lastname>Anderson</lastname>
+    <nickname>NEO</nickname>
+    <company>MetaCortex</company>
+    <telephone>312-555-0690</telephone>
+    <email>test@test.com</email>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <id>2147483647</id>
+    <firstname>Tomas</firstname>
+    <lastname>Anderson</lastname>
+    <nickname>NEO</nickname>
+    <company>MetaCortex</company>
+    <telephone>312-555-0690</telephone>
+    <email>test@test.com</email>
+  </ru.stqa.pft.addressbook.model.ContactData>
+</list>

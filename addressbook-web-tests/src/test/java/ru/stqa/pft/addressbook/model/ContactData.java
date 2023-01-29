@@ -1,15 +1,29 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 import java.util.Objects;
 
+
+@XStreamAlias("contacts")
+
 public class ContactData {
+    @XStreamOmitField
     private int id =  Integer.MAX_VALUE;
+    @Expose
     private String firstname;
+    @Expose
     private String lastname;
+    @Expose
     private String nickname;
+    @Expose
     private String company;
+    @Expose
     private String telephone;
+    @Expose
     private String email;
     private String group;
     private String homePhone;
@@ -18,10 +32,8 @@ public class ContactData {
     private String allPhones;
     private String email2;
     private String email3;
-
     private String allEmail;
     private String address;
-
     private String phone2;
     private File photo;
 
@@ -80,7 +92,6 @@ public class ContactData {
     public String getPhone2() {
         return phone2  ;
     }
-
     public File getPhoto() {
         return photo;
     }
@@ -184,7 +195,7 @@ public class ContactData {
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", allPhones='" + allPhones + '\'' +
+        //", allPhones='" + allPhones + '\'' +
                 '}';
     }
 
@@ -194,12 +205,12 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(allPhones, that.allPhones);
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname, allPhones);
+        return Objects.hash(id, firstname, lastname);
     }
 
 
