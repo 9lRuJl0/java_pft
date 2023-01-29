@@ -43,8 +43,11 @@ public class CreationContactTest extends TestBase {
     xstream.processAnnotations(ContactData.class);
     xstream.allowTypes(new Class[]{ContactData.class});
     List<ContactData> contacts = (List<ContactData>) xstream.fromXML(xml);
+    System.out.println(contacts);
     return contacts.stream().map((c) -> new Object[] {c}).collect(Collectors.toList()).iterator();
   }
+
+
 
   @DataProvider
   public Iterator<Object[]> validContactsFromJson() throws IOException {
@@ -75,10 +78,10 @@ public class CreationContactTest extends TestBase {
 
    String groupName = "test1";
   @Test (dataProvider = "validContactsFromJson")
-  public void testCreationContact() throws Exception {
+  public void testCreationContact(ContactData contact) throws Exception {
     app.goTo().gotoHomePage();
     Contacts before = app.contact().all();
-    ContactData contact = new ContactData().withFirstname("Tomas").withLastname("Anderson").withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withEmail("test@test.com");
+    //ContactData contact = new ContactData().withFirstname("Tomas").withLastname("Anderson").withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690").withEmail("test@test.com");
     app.contact().create(contact);
     assertThat(app.contact().count(),  equalTo(before.size() + 1));
     Contacts after = app.contact().all();
