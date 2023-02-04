@@ -1,0 +1,1139 @@
+433  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\yaro-\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml"
+677  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE HbConnectionTest.setUp()[pri:0, instance:null] -920060362
+677  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+680  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+680  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+680  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+687  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE HbConnectionTest.testHbConnection()[pri:0, instance:ru.stqa.pft.addressbook.tests.HbConnectionTest@418c5a9c] 621708477
+687  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+687  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+687  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+687  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+691  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\yaro-\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+744  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+759  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+765  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+789  [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.5.Final
+790  [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+926  [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Checking public/system identifiers `-//Hibernate/Hibernate Configuration DTD 3.0//EN`/`http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd` as DTD references
+933  [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+1237 [main] DEBUG org.hibernate.orm.idgen.factory - Resolving IdentifierGenerator instances will not use CDI as it was not configured
+1240 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+1241 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+1241 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+1241 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+1242 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+1242 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+1243 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+1244 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+1244 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+1245 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+1245 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+1246 [main] DEBUG org.hibernate.orm.idgen.factory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+1249 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+1250 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+1327 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(FloatTypeDescriptor) replaced previous registration(DoubleTypeDescriptor)
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@173373b4
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@173373b4
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@173373b4
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@40d10481
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@40d10481
+1337 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@60dd3c23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@60dd3c23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@52b6319f
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@52b6319f
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@5e9456ae
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@5e9456ae
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@5e9456ae
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BasicTypeReference@16a9a4f1
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@16a9a4f1
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BasicTypeReference@16a9a4f1
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@1f1cae23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@1f1cae23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.BasicTypeReference@1f1cae23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.BasicTypeReference@1f1cae23
+1338 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.BasicTypeReference@7c455e96
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BasicTypeReference@985696
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@985696
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@5bcde458
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@215a34b4
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@77bd7fe7
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@77bd7fe7
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@77bd7fe7
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.BasicTypeReference@35d3ab60
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.BasicTypeReference@35d3ab60
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@35d3ab60
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@10876a6
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@10876a6
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@10876a6
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@71870da7
+1339 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@71870da7
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@71870da7
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@6dd91637
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@6dd91637
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@6dd91637
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@45792847
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@45792847
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@706cb08
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@706cb08
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.BasicTypeReference@4e25147a
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.BasicTypeReference@4e25147a
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@4e25147a
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@6b68cb27
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.BasicTypeReference@675ffd1d
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@675ffd1d
+1340 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@56303475
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.BasicTypeReference@30506c0d
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@30506c0d
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.BasicTypeReference@30506c0d
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1dcca8d3
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.BasicTypeReference@1dcca8d3
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.BasicTypeReference@1dcca8d3
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.BasicTypeReference@5631962
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@52a70627
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.BasicTypeReference@6124287a
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@6124287a
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@19569ebd
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@19569ebd
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@4632cfc
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@6e1f8469
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@2e380628
+1341 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@3b6c624
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@1eaf1e62
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@c81fd12
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@62e6a3ec
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@62e6a3ec
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@5754de72
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@5754de72
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@31ee96f4
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@31ee96f4
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@320494b6
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@320494b6
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@652ab8d9
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@652ab8d9
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@14fc5d40
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@51e0301d
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@47d7bfb3
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@47d7bfb3
+1342 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@770b3be0
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@770b3be0
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1eb6e1c
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@51dbd6e4
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.BasicTypeReference@2b8bd14b
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@2b8bd14b
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.BasicTypeReference@5f13be1
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@5f13be1
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@5f303ecd
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@5f303ecd
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@5f303ecd
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@50d3bf39
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@50d3bf39
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@50d3bf39
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@25a73de1
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@29852487
+1343 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration instant -> org.hibernate.type.BasicTypeReference@771db12c
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@771db12c
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@3afae281
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@3afae281
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@3afae281
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@26ae880a
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@260f2144
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.BasicTypeReference@3c017078
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@3c017078
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.BasicTypeReference@51827393
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@51827393
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@51827393
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.BasicTypeReference@3be4f71
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@3be4f71
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@5c645b43
+1344 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@5c645b43
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@6bd16207
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@6bd16207
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@298d9a05
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@298d9a05
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.BasicTypeReference@58399d82
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@58399d82
+1345 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@26f96b85
+1350 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@141e879d
+1350 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@141e879d
+1351 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.JavaObjectType@4390f46e
+1352 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@4390f46e
+1352 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@39109136
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@27c04377
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@34dc85a
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@67403656
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@5a6482a9
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@7f9ab969
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@12f8b1d8
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@746cd757
+1353 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@ae372b9
+1377 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+1382 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: com.mysql.jdbc.Driver
+1382 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/addressbook]
+1383 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=, user=root}
+1383 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+1385 [main] DEBUG o.hibernate.orm.connections.pooling - Initializing Connection pool with 1 Connections
+1385 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 1 (min=1)
+1577 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.4.14-MariaDB
+      major : 5
+      minor : 5
+1577 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+      major : 8
+      minor : 0
+1577 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+1619 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+1626 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+1626 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@58860997) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@81b5db0)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7487b142) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7139bd31)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199bc830) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4b3fe06e)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@27b45ea) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3e17a0a1)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@790a251b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4d8286c4)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@150ede8b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@161f6623)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3e15bb06) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6778aea6)
+1651 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e1ce44) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@69228e85)
+1652 [main] DEBUG o.h.t.d.sql.spi.DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7a7cc52c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5853495b)
+1652 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+1653 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+1653 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+1654 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+1655 [main] DEBUG o.h.t.d.jdbc.spi.JdbcTypeRegistry - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+1659 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@10f19647
+1659 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@39109136`
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@1(java.time.OffsetDateTime,93)
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> basicType@1(java.time.OffsetDateTime,93)
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> basicType@1(java.time.OffsetDateTime,93)
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@2(java.time.ZonedDateTime,93)
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> basicType@2(java.time.ZonedDateTime,93)
+1663 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> basicType@2(java.time.ZonedDateTime,93)
+1665 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@65c86db8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7efe7b87]
+1699 [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+1722 [main] DEBUG o.h.cfg.annotations.EntityBinder - Binding entity from annotated class: ru.stqa.pft.addressbook.model.GroupData
+1727 [main] DEBUG org.hibernate.cfg.AnnotatedColumn - Binding column: DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1731 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+1736 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.addressbook.model.GroupData on table group_list
+1753 [main] DEBUG org.hibernate.cfg.AnnotatedColumn - Binding column: Column{table=Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+1755 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.GroupData] is safe
+1755 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.GroupData
+1756 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+1760 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:id]
+1767 [main] DEBUG o.h.c.annotations.BasicValueBinder - building BasicValue for id
+1770 [main] DEBUG org.hibernate.mapping.BasicValue - Skipping column re-registration: group_list.group_id
+1770 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+1774 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(BasicValue([Column(group_id)]), id, assigned, , ...)
+1775 [main] DEBUG org.hibernate.cfg.AnnotatedColumn - Binding column: Column{table=Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+1776 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+1776 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:footer]
+1776 [main] DEBUG o.h.c.annotations.BasicValueBinder - building BasicValue for footer
+1776 [main] DEBUG org.hibernate.mapping.BasicValue - Skipping column re-registration: group_list.group_footer
+1776 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+1777 [main] DEBUG org.hibernate.cfg.AnnotatedColumn - Binding column: Column{table=Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+1777 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+1777 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:header]
+1777 [main] DEBUG o.h.c.annotations.BasicValueBinder - building BasicValue for header
+1777 [main] DEBUG org.hibernate.mapping.BasicValue - Skipping column re-registration: group_list.group_header
+1777 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+1777 [main] DEBUG org.hibernate.cfg.AnnotatedColumn - Binding column: Column{table=Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+1777 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+1778 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:name]
+1778 [main] DEBUG o.h.c.annotations.BasicValueBinder - building BasicValue for name
+1778 [main] DEBUG org.hibernate.mapping.BasicValue - Skipping column re-registration: group_list.group_name
+1778 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+1783 [main] DEBUG o.h.c.annotations.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for id
+1783 [main] DEBUG o.h.c.annotations.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for footer
+1785 [main] DEBUG o.h.c.annotations.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for header
+1785 [main] DEBUG o.h.c.annotations.BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for name
+1787 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+2053 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+2094 [main] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2098 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2098 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, java.specification.version=11, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\plugins\testng\lib\testng-rt.jar;C:\Users\yaro-\Documents\GitHub\java_pft\addressbook-web-tests\out\test\classes;C:\Users\yaro-\Documents\GitHub\java_pft\addressbook-web-tests\out\test\resources;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.testng\testng\7.6.1\3411a1a74d2eba06b2487d048a107c1b42c4558c\testng-7.6.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\3.141.0\6422b0ece57c3ecc406f716285f20ff98de9831b\selenium-java-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.82\a7c5fef184d238065de38f81bbc6ee50cca2e21\jcommander-1.82.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.19\e0e581d812aa92ae12f07234f3398e06af74b112\xstream-1.4.19.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10\dd9b193aef96e973d5a11ab13cd17430c2e4306b\gson-2.10.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.4.4\76096e4550475dec2554b582dae00217158c64e1\logback-classic-1.4.4.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.15\1cd928d0f1a93563993ce1d8b468217ea0d19b11\mysql-connector-java-8.0.15.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.1\f48d81adce2abf5ad3cfe463df517952749e03bc\slf4j-api-2.0.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\3.141.0\9fc27d8605114caacf7ae0a3e8b37b5922d4612d\selenium-chrome-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\3.141.0\7ff52a57fd646244bcfc033ce5df277983fc55ca\selenium-edge-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\3.141.0\68c217c2197ba6e2b26c6d74c741c6d56d835374\selenium-firefox-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\3.141.0\fff4ec3479f6e7bd6ff52440444feced0da40399\selenium-ie-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\3.141.0\695b66afe1ab8475b99238e85e74fcb422c82e4c\selenium-opera-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\3.141.0\cce9c6c62b9a1dd43059a89ac8427a7d9a0f81e3\selenium-safari-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\3.141.0\234ba020c52c786d74b0953627269a7948d7d50\selenium-support-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\3.141.0\96ffe86de78dfd4955461fec52594f085549b759\selenium-remote-driver-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\25.0-jre\7319c34fa5866a85b6bad445adad69d402323129\guava-25.0-jre.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\3.141.0\901c3ecfc3ad1bb07f1e73533df645f9c0304412\selenium-api-3.141.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.8.15\cb36fe3c70ead5fcd016856a7efff908402d86b8\byte-buddy-1.8.15.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.11.0\75966e05a49046ca2ae734e5626f28837a8d1e82\okhttp-3.11.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.14.0\102d7be47241d781ef95f1581d414b0943053130\okio-1.14.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\io.github.x-stream\mxparser\1.2.2\476fb3b3bb3716cad797cd054ce45f89445794e9\mxparser-1.2.2.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.4.4\f7b55fa9cd6a92225fd42532e72b1c69e4ecb20e\logback-core-1.4.4.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.6.1\d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924\protobuf-java-3.6.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.hibernate.orm\hibernate-core\6.1.5.Final\b8536d33e7221e85553f0cdaadd9669baff2da9a\hibernate-core-6.1.5.Final.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-compat-qual\2.0.0\fc89b03860d11d6213d0154a62bcd1c2f69b9efa\checker-compat-qual-2.0.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.1.3\39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\error_prone_annotations-2.1.3.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.14\775b7e22fb10026eed3f86e8dc556dfafe35f2d5\animal-sniffer-annotations-1.14.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\jakarta.persistence\jakarta.persistence-api\3.0.0\affc7884a85b6876d438a88b5d21ea29b1cc2dd8\jakarta.persistence-api-3.0.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\jakarta.transaction\jakarta.transaction-api\2.0.0\24a0525b4acfbca4086d2f1278be3a084fe1c67d\jakarta.transaction-api-2.0.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.webjars\jquery\3.6.0\633447ad320c04c69fb621d08ba2268f50822eee\jquery-3.6.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.12.18\875a9c3f29d2f6f499dfd60d76e97a343f9b1233\byte-buddy-1.12.18.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.4.3.Final\c4bd7e12a745c0e7f6cf98c45cdcdf482fd827ea\jboss-logging-3.4.3.Final.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\6.0.2.Final\fa5a14ef3d2e5c3c99b53a4bef756a3268d69187\hibernate-commons-annotations-6.0.2.Final.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.4.2.Final\1e1c385990b258ff1a24c801e84aebbacf70eb39\jandex-2.4.2.Final.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.5.1\3fe0bed568c62df5e89f4f174c101eab25345b6c\classmate-1.5.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\3.0.2\9897322f5de201bfbfcd1f4f46ffdd4204673b3c\jaxb-runtime-3.0.2.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\3.0.1\5257932df36ff3e4e6de50429dde946490a6a800\jakarta.xml.bind-api-3.0.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\jakarta.inject\jakarta.inject-api\2.0.0\46fc8560b6fd17b78396d88f39c1a730457671f0\jakarta.inject-api-2.0.0.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.10.1\10839f875928f59c622d675091d51a43ea0dc5f7\antlr4-runtime-4.10.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-core\3.0.2\e83d0b0005525ddd8b8642bd0bb02227fcf871f1\jaxb-core-3.0.2.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.sun.activation\jakarta.activation\2.0.1\828b80e886a52bb09fe41ff410b10b342f533ce1\jakarta.activation-2.0.1.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\3.0.2\8c448a44cdcdbb5dd48ff2eb88cab858ed52cf91\txw2-3.0.2.jar;C:\Users\yaro-\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\4.0.1\4e25c41d338aad4a2c92d0020c9ae0335fad5099\istack-commons-runtime-4.0.1.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, hbm2ddl.auto=validate, user.variant=, java.vendor.url=https://openjdk.java.net/, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.16\bin, sun.java.command=com.intellij.rt.testng.RemoteTestNGStarter -d src/test/resources -usedefaultlisteners false -socket59705 @w@C:\Users\yaro-\AppData\Local\Temp\idea_working_dirs_testng1.tmp -temp C:\Users\yaro-\AppData\Local\Temp\idea_testng1.tmp, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\yaro-, user.language=ru, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, java.version.date=2022-07-19, java.home=C:\Program Files\Java\jdk-11.0.16, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.16+11-LTS-199, user.name=yaro-, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/addressbook, connection.pool_size=1, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=18.9, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\yaro-\AppData\Local\Temp\, java.version=11.0.16, user.dir=C:\Users\yaro-\Documents\GitHub\java_pft\addressbook-web-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@2aa7399c, java.library.path=C:\Program Files\Java\jdk-11.0.16\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;"c:\Program Files\Java\jdk-11.0.16\bin;C:\Program Files\Common Files\Oracle\Java\javapath";c:\Program Files\Java\jdk-11.0.16\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\yaro-\AppData\Local\Microsoft\WindowsApps;D:\Java\IntelliJ IDEA\IntelliJ IDEA Community Edition 2022.2.3\bin;;C:\Users\yaro-\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.16+11-LTS-199, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost:3306/addressbook, java.class.version=55.0}
+2100 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+2111 [main] DEBUG org.hibernate.orm.query.plan.cache - Starting QueryPlanCache(2048)
+2189 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+2189 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+2190 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+2190 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+2191 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@2e7157c7] under count; prior registration was null
+2191 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@3382cf68] under every; prior registration was null
+2191 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@2f74900b] under any; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+2192 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+2193 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+2194 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+2195 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+2195 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+2195 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : length -> character_length
+2195 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@4baed682] under position; prior registration was null
+2196 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@118dcbbd] under overlay; prior registration was null
+2196 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@3664f108] under trim; prior registration was null
+2197 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@34b87182] under cast; prior registration was null
+2198 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@72503b19] under collate; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@2ecf5915] under extract; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@6a1d6ef2] under ifnull; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+2199 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+2200 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@6bcc3f27] under pad; prior registration was null
+2200 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@6bee793f] under str; prior registration was null
+2201 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@4548d254] under format; prior registration was null
+2201 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@39c96e48] under timestampadd; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@2b7e8044] under timestampdiff; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : dateadd -> timestampadd
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : datediff -> timestampdiff
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@63cf9de0] under current_date; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@594d9f07] under current_time; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@5befbac1] under current_timestamp; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : current date -> current_date
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : current time -> current_time
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : current timestamp -> current_timestamp
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@5e9f73b] under local_date; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@1a565afb] under local_time; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@2fd64b11] under local_datetime; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@949c598] under offset_datetime; prior registration was null
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : local date -> local_date
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : local time -> local_time
+2202 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : local datetime -> local_datetime
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : offset datetime -> offset_datetime
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@43d3aba5] under instant; prior registration was null
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : current_instant -> instant
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@6f1b8544] under sql; prior registration was null
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+2203 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log2)] under log2; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+2204 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(pi)] under pi; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(reverse)] under reverse; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(space)] under space; prior registration was null
+2205 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@365cdacf] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@303c55fa] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(day)] under day; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(month)] under month; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(year)] under year; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(hour)] under hour; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(minute)] under minute; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(second)] under second; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(microsecond)] under microsecond; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofweek)] under dayofweek; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofmonth)] under dayofmonth; prior registration was null
+2206 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : day -> dayofmonth
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofyear)] under dayofyear; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(week)] under week; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(quarter)] under quarter; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(monthname)] under monthname; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayname)] under dayname; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_day)] under last_day; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(date)] under date; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(timestamp)] under timestamp; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(time)] under time; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_date)] under utc_date; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_time)] under utc_time; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_timestamp)] under utc_timestamp; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rand)] under rand; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(crc32)] under crc32; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha1)] under sha1; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha2)] under sha2; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha)] under sha; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_length)] under bit_length; prior registration was null
+2207 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was NamedSqmFunctionTemplate(octet_length)
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(char)] under char; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registering alternate key : chr -> char
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(instr)] under instr; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@9efcd90] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@4baed682
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curtime)] under curtime; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curdate)] under curdate; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(now)] under now; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(truncate)] under truncate; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(insert)] under insert; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7eb200ce] under bitand; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@2ee83775] under bitor; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7c2924d7] under bitxor; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@b5de58f] under bitnot; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+2208 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(datediff)] under datediff; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(adddate)] under adddate; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subdate)] under subdate; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(addtime)] under addtime; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subtime)] under subtime; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@6587305a] under format; prior registration was org.hibernate.dialect.function.FormatFunction@4548d254
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(makedate)] under makedate; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(maketime)] under maketime; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@1a565afb
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@2fd64b11
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was NamedSqmFunctionTemplate(localtime)
+2209 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sysdate)] under sysdate; prior registration was null
+2210 [main] DEBUG o.h.q.s.f.SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@74d6736] under listagg; prior registration was null
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - abs(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double acos(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - adddate(DATE datetime, INTEGER days)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - addtime(TIME datetime, TIME time)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Boolean any(BOOLEAN arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer ascii(STRING arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double asin(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double atan(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double atan2(NUMERIC arg0, NUMERIC arg1)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double avg(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bit_and(arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer bit_length(STRING_OR_CLOB arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bit_or(arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bitand(arg0, arg1)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bitnot(arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bitor(arg0, arg1)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - bitxor(arg0, arg1)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - cast(arg as Type)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - ceiling(NUMERIC arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Character char(INTEGER arg)
+2215 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer character_length(STRING_OR_CLOB arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - coalesce(arg0[, arg1[, ...]])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String collate(STRING string as COLLATION collation)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String concat(STRING string0[, STRING string1[, ...]])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double cos(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double cot(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Long count([distinct ]{arg|*})
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer crc32(arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date curdate()
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date current_date
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Time current_time
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp current_timestamp
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Time curtime()
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date date(arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer datediff(DATE end, DATE start)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer day(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String dayname(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer dayofmonth(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer dayofweek(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer dayofyear(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double degrees(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Boolean every(BOOLEAN arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double exp(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - floor(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String format(TEMPORAL datetime as STRING pattern)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer hour(TIME arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - ifnull(arg0, arg1)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Instant instant
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer instr(STRING string, STRING pattern[, INTEGER start[, INTEGER occurrence]])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date last_day(DATE arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String left(STRING string, INTEGER length)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String listagg(STRING arg0, STRING arg1)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double ln(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalDate local_date
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalDateTime local_datetime
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalTime local_time
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp localtime
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp localtimestamp
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer locate(STRING pattern, STRING string[, INTEGER start])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double log(NUMERIC arg0[, NUMERIC arg1])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double log10(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double log2(NUMERIC arg)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String lower(STRING string)
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String lpad(string, length[, padding])
+2216 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String ltrim(STRING string[, STRING characters])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date makedate(INTEGER year, INTEGER dayofyear)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Time maketime(INTEGER hour, INTEGER min, INTEGER sec)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - max(COMPARABLE arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String md5(arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer microsecond(TIME arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - min(COMPARABLE arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer minute(TIME arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer mod(INTEGER arg0, INTEGER arg1)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer month(DATE arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String monthname(DATE arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp now()
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - nullif(arg0, arg1)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer octet_length(STRING_OR_CLOB arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - OffsetDateTime offset_datetime
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double pi()
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer position(STRING pattern in STRING string)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double power(NUMERIC arg0, NUMERIC arg1)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer quarter(DATE arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double radians(NUMERIC arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double rand([INTEGER seed])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String repeat(STRING string, INTEGER times)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String replace(STRING string, STRING pattern, STRING replacement)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String reverse(STRING arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String right(STRING string, INTEGER length)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - round(NUMERIC arg0, INTEGER arg1)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String rpad(string, length[, padding])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String rtrim(STRING string[, STRING characters])
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer second(TIME arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String sha(arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String sha1(arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String sha2(arg0, arg1)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer sign(NUMERIC arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double sin(NUMERIC arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String soundex(arg)
+2217 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String space(INTEGER arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Object sql
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double sqrt(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double stddev(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double stddev_pop(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double stddev_samp(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String str(arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - subdate(DATE datetime, INTEGER days)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String substr(STRING string, INTEGER start[, INTEGER length])
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - subtime(TIME datetime, TIME time)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - sum(arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp sysdate()
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double tan(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String time(arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp timestamp(arg0[, arg1])
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - basicType@12(java.lang.Long,-5)|basicType@15(java.lang.Double,6) timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double truncate(NUMERIC number, INTEGER places)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - String upper(STRING string)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date utc_date
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Time utc_time
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp utc_timestamp
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double var_pop(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double var_samp(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Double variance(NUMERIC arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer week(DATE arg)
+2218 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer year(DATE arg)
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Character chr(INTEGER arg)
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Date current date
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Time current time
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Timestamp current timestamp
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Instant current_instant
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer day(DATE arg)
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - Integer length(STRING_OR_CLOB arg)
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalDate local date
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalDateTime local datetime
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - LocalTime local time
+2219 [main] DEBUG org.hibernate.HQL_FUNCTIONS - OffsetDateTime offset datetime
+2220 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@65c86db8] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@7c1447b5]
+2293 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.GroupData] is safe
+2293 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.GroupData
+2464 [main] DEBUG o.h.orm.model.mapping.creation - Starting post-init callbacks
+2464 [main] DEBUG o.h.orm.model.mapping.creation - Starting PostInitCallbackEntry : Entity(ru.stqa.pft.addressbook.model.GroupData) `staticFetchableList` generator
+2468 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.addressbook.model.GroupData
+2468 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+2468 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+2468 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+2468 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+2479 [main] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_0
+2481 [main] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(ru.stqa.pft.addressbook.model.GroupData)] with identifierForTableGroup [ru.stqa.pft.addressbook.model.GroupData] for NavigablePath [ru.stqa.pft.addressbook.model.GroupData] 
+2504 [main] DEBUG o.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [ru.stqa.pft.addressbook.model.GroupData]
+ |  +-BasicFetch [ru.stqa.pft.addressbook.model.GroupData.footer]
+ |  +-BasicFetch [ru.stqa.pft.addressbook.model.GroupData.header]
+ |  \-BasicFetch [ru.stqa.pft.addressbook.model.GroupData.name]
+
+2525 [main] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : ru.stqa.pft.addressbook.model.GroupData) {
+          primaryTableReference : group_list as g1_0
+        }
+      }
+    }
+
+2549 [main] DEBUG o.h.q.named.NamedObjectRepository - Checking 0 named HQL queries
+2550 [main] DEBUG o.h.q.named.NamedObjectRepository - Checking 0 named SQL queries
+2569 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6f85ee02] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2866 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2867 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2871 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2871 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2875 [main] DEBUG o.h.s.i.SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2879 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@240f350a
+2881 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: a3437a8e-384c-4c99-a5fc-43c3e9e29d06 (<unnamed>)
+2881 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2928 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2932 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2932 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2949 [main] DEBUG org.hibernate.orm.query.hql - HQL : from GroupData
+3067 [main] DEBUG o.h.q.h.i.SemanticQueryBuilder - Handling root path - GroupData
+3075 [main] DEBUG o.h.q.h.i.SemanticQueryBuilder - Encountered implicit select clause : fromGroupData
+3081 [main] DEBUG org.hibernate.orm.query.sqm.ast - SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+            -> [root] - `ru.stqa.pft.addressbook.model.GroupData(242169660495300)`
+            <- [root] - `ru.stqa.pft.addressbook.model.GroupData(242169660495300)`
+          <- [selection]
+        <- [select]
+        -> [from]
+          -> [root] - `ru.stqa.pft.addressbook.model.GroupData(242169660495300)`
+          <- [root] - `ru.stqa.pft.addressbook.model.GroupData(242169660495300)`
+        <- [from]
+      <- [query-spec]
+    <- [select]
+
+3108 [main] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_0
+3109 [main] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(ru.stqa.pft.addressbook.model.GroupData(242169660495300))] with identifierForTableGroup [ru.stqa.pft.addressbook.model.GroupData] for NavigablePath [ru.stqa.pft.addressbook.model.GroupData] 
+3113 [main] DEBUG o.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [ru.stqa.pft.addressbook.model.GroupData(242169660495300)]
+ |  +-BasicFetch [ru.stqa.pft.addressbook.model.GroupData(242169660495300).footer]
+ |  +-BasicFetch [ru.stqa.pft.addressbook.model.GroupData(242169660495300).header]
+ |  \-BasicFetch [ru.stqa.pft.addressbook.model.GroupData(242169660495300).name]
+
+3113 [main] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : ru.stqa.pft.addressbook.model.GroupData(242169660495300)) {
+          primaryTableReference : group_list as g1_0
+        }
+      }
+    }
+
+3124 [main] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+3131 [main] DEBUG org.hibernate.orm.results - Initializer list
+3132 [main] DEBUG org.hibernate.orm.results -     ru.stqa.pft.addressbook.model.GroupData(242169660495300) -> EntityResultInitializer(ru.stqa.pft.addressbook.model.GroupData(242169660495300))@1892928959 (SingleTableEntityPersister(ru.stqa.pft.addressbook.model.GroupData))
+3137 [main] DEBUG org.hibernate.SQL - select g1_0.group_id,g1_0.group_footer,g1_0.group_header,g1_0.group_name from group_list g1_0
+3272 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [51]
+3272 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 51
+3281 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#51] : GroupData{id='51', name='null'}
+3282 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3282 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3282 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3289 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#51
+3289 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3289 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#51] - using loading instance
+3289 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [52]
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 52
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#52] : GroupData{id='52', name='null'}
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#52
+3290 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#52] - using loading instance
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [53]
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 53
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#53] : GroupData{id='53', name='null'}
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3290 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3290 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#53
+3290 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#53] - using loading instance
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [54]
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 54
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#54] : GroupData{id='54', name='null'}
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#54
+3291 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#54] - using loading instance
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [57]
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 57
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#57] : GroupData{id='57', name='null'}
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3291 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#57
+3291 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3291 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#57] - using loading instance
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [58]
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 58
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#58] : GroupData{id='58', name='null'}
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#58
+3292 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#58] - using loading instance
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [59]
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 59
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#59] : GroupData{id='59', name='null'}
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3292 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3292 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#59
+3292 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#59] - using loading instance
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [60]
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 60
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#60] : GroupData{id='60', name='null'}
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#60
+3293 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#60] - using loading instance
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [61]
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 61
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#61] : GroupData{id='61', name='null'}
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3293 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#61
+3293 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3293 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#61] - using loading instance
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [63]
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 63
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#63] : GroupData{id='63', name='null'}
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#63
+3294 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#63] - using loading instance
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [65]
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 65
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#65] : GroupData{id='65', name='null'}
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#65
+3294 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#65] - using loading instance
+3294 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [67]
+3294 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 67
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#67] : GroupData{id='67', name='null'}
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#67
+3295 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#67] - using loading instance
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [70]
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 70
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#70] : GroupData{id='70', name='null'}
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#70
+3295 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#70] - using loading instance
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [71]
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 71
+3295 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#71] : GroupData{id='71', name='null'}
+3295 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#71
+3296 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#71] - using loading instance
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [75]
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 75
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#75] : GroupData{id='75', name='null'}
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [test3]
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [test2]
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#75
+3296 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#75] - using loading instance
+3296 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [80]
+3296 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 80
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#80] : GroupData{id='80', name='null'}
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test]
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#80
+3297 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#80] - using loading instance
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [81]
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 81
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#81] : GroupData{id='81', name='null'}
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test]
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#81
+3297 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#81] - using loading instance
+3297 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [82]
+3297 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 82
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#82] : GroupData{id='82', name='null'}
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#82
+3298 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#82] - using loading instance
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [83]
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 83
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#83] : GroupData{id='83', name='null'}
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test2]
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#83
+3298 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#83] - using loading instance
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [84]
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 84
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#84] : GroupData{id='84', name='null'}
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - []
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test3]
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#84
+3298 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3298 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#84] - using loading instance
+3298 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [85]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 85
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#85] : GroupData{id='85', name='null'}
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 1]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 1]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#85
+3299 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#85] - using loading instance
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [86]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 86
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#86] : GroupData{id='86', name='null'}
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 2]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 2]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test2]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#86
+3299 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#86] - using loading instance
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [87]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 87
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#87] : GroupData{id='87', name='null'}
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 3]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 3]
+3299 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test3]
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#87
+3299 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3299 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#87] - using loading instance
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [88]
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 88
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#88] : GroupData{id='88', name='null'}
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 2]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 2]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test2]
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#88
+3300 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#88] - using loading instance
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [89]
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 89
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#89] : GroupData{id='89', name='null'}
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 3]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 3]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test3]
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#89
+3300 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#89] - using loading instance
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [90]
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 90
+3300 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#90] : GroupData{id='90', name='null'}
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 1]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 1]
+3300 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test1]
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#90
+3301 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#90] - using loading instance
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [91]
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 91
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#91] : GroupData{id='91', name='null'}
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 2]
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 2]
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test2]
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#91
+3301 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#91] - using loading instance
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [92]
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 92
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#92] : GroupData{id='92', name='null'}
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 3]
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 3]
+3301 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test3]
+3301 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#92
+3302 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#92] - using loading instance
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [93]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 93
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#93] : GroupData{id='93', name='null'}
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 0]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 0]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 0]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#93
+3302 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#93] - using loading instance
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [94]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 94
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#94] : GroupData{id='94', name='null'}
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 1]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 1]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 1]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#94
+3302 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#94] - using loading instance
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [95]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 95
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#95] : GroupData{id='95', name='null'}
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer 2]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header 2]
+3302 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 2]
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#95
+3302 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3302 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#95] - using loading instance
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [96]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 96
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#96] : GroupData{id='96', name='null'}
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer0]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header0]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 0]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#96
+3303 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#96] - using loading instance
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [97]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 97
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#97] : GroupData{id='97', name='null'}
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer1]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header1]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 1]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#97
+3303 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#97] - using loading instance
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [98]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 98
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#98] : GroupData{id='98', name='null'}
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer2]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header2]
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 2]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#98
+3303 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#98] - using loading instance
+3303 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [99]
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 99
+3303 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#99] : GroupData{id='99', name='null'}
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer3]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header3]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 3]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#99
+3304 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#99] - using loading instance
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [100]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 100
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#100] : GroupData{id='100', name='null'}
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer4]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header4]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 4]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#100
+3304 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#100] - using loading instance
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [101]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 101
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#101] : GroupData{id='101', name='null'}
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer5]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header5]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 5]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#101
+3304 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#101] - using loading instance
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [102]
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 102
+3304 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#102] : GroupData{id='102', name='null'}
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer6]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header6]
+3304 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 6]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#102
+3305 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#102] - using loading instance
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [103]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 103
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#103] : GroupData{id='103', name='null'}
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer7]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header7]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 7]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#103
+3305 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#103] - using loading instance
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [104]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 104
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#104] : GroupData{id='104', name='null'}
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer8]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header8]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 8]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#104
+3305 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#104] - using loading instance
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [105]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 105
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#105] : GroupData{id='105', name='null'}
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer9]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header9]
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 9]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#105
+3305 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#105] - using loading instance
+3305 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [106]
+3305 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 106
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#106] : GroupData{id='106', name='null'}
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+0]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+0]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 0]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#106
+3306 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#106] - using loading instance
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [107]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 107
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#107] : GroupData{id='107', name='null'}
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+1]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+1]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 1]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#107
+3306 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#107] - using loading instance
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [108]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 108
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#108] : GroupData{id='108', name='null'}
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+2]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+2]
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 2]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#108
+3306 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#108] - using loading instance
+3306 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [109]
+3306 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 109
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#109] : GroupData{id='109', name='null'}
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+0]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+0]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 0]
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#109
+3307 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#109] - using loading instance
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [110]
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 110
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#110] : GroupData{id='110', name='null'}
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+1]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+1]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 1]
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#110
+3307 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#110] - using loading instance
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [111]
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 111
+3307 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#111] : GroupData{id='111', name='null'}
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+2]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+2]
+3307 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 2]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#111
+3308 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#111] - using loading instance
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [112]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 112
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#112] : GroupData{id='112', name='null'}
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+0]
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+0]
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 0]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#112
+3308 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#112] - using loading instance
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [113]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 113
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#113] : GroupData{id='113', name='null'}
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+1]
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+1]
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 1]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#113
+3308 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#113] - using loading instance
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [0] - [114]
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Hydrated EntityKey (ru.stqa.pft.addressbook.model.GroupData(242169660495300)): 114
+3308 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Created new entity instance [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#114] : GroupData{id='114', name='null'}
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [1] - [footer
+2]
+3308 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [2] - [header
+2]
+3309 [main] DEBUG org.hibernate.orm.results - Extracted JDBC value [3] - [test 2]
+3309 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Done materializing entityInstance : ru.stqa.pft.addressbook.model.GroupData(242169660495300)#114
+3309 [main] DEBUG org.hibernate.orm.results.loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@2b098563
+3309 [main] DEBUG o.h.orm.results.loading.entity - (EntityResultInitializer) Found existing loading entry [ru.stqa.pft.addressbook.model.GroupData(242169660495300)#114] - using loading instance
+3311 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+3312 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+3316 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+3320 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 50 objects
+3321 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+3321 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=65}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=63}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=60}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=61}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=58}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=59}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=57}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=54}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=52}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=53}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=51}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test, header=, id=80}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test, header=, id=81}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=test3, name=test1, header=test2, id=75}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=70}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=71}
+3322 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=, name=test1, header=, id=67}
+3323 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=footer0, name=test 0, header=header0, id=96}
+3323 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=footer1, name=test 1, header=header1, id=97}
+3323 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=94}
+3323 [main] DEBUG o.h.internal.util.EntityPrinter - ru.stqa.pft.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=95}
+3323 [main] DEBUG o.h.internal.util.EntityPrinter - More......
+3324 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+3324 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

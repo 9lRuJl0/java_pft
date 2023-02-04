@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -52,17 +51,6 @@ public class ApplicationManager {
         contactHelper = new ContactHelper(wd);
     }
 
-
-
-    public void login() {
-      wd.get("http://localhost/addressbook/");
-      wd.findElement(By.name("user")).click();
-      wd.findElement(By.name("user")).sendKeys("Admin");
-      wd.findElement(By.id("LoginForm")).click();
-      wd.findElement(By.name("pass")).click();
-      wd.findElement(By.name("pass")).sendKeys("secret");
-      wd.findElement(By.xpath("//input[@value='Login']")).click();
-    }
 
     public void stop() {
         wd.quit();

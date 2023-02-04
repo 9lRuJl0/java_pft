@@ -1,0 +1,39 @@
+353  [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\yaro-\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml"
+640  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] -1592578915
+640  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+642  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+642  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+642  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+644  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:null] 995999974
+644  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+644  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+645  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+645  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+657  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.logTestStart(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -275865842
+657  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+657  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+657  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+657  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+658  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.logTestStop(java.lang.reflect.Method)[pri:0, instance:null] -2066959846
+658  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+658  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+658  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+659  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+660  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:ru.stqa.pft.addressbook.tests.GroupCreationTest@68d279ec] -366681873
+660  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+660  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+660  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+660  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+661  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE GroupCreationTest.testGroupCreation(ru.stqa.pft.addressbook.model.GroupData)[pri:0, instance:ru.stqa.pft.addressbook.tests.GroupCreationTest@68d279ec] -553369519
+661  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+661  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+661  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+661  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+663  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.tearDown()[pri:0, instance:ru.stqa.pft.addressbook.tests.GroupCreationTest@68d279ec] -1725114938
+663  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+663  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+663  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+663  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+667  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\yaro-\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
