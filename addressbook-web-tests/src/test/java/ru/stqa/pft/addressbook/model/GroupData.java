@@ -24,12 +24,11 @@ public class GroupData {
     @Column(name = "group_name")
     private  String name;
     @Expose
-    @Column(name = "group_header")
-//    @Type(type = "text")
+    //@Column(name = "group_header")
+    @Column(name = "group_header", columnDefinition = "Text")
     private  String header;
     @Expose
-    @Column(name = "group_footer")
-//    @Type(type = "text")
+    @Column(name = "group_footer", columnDefinition = "Text")
     private  String footer;
 
 
