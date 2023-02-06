@@ -13,22 +13,27 @@ public class GroupDeletionTests extends TestBase {
     String groupName = "test1";
     @BeforeMethod
     public void ensurePreconditions() {
-        // Выполнение предусловия создания группы
-        app.goTo().groupPage();
-        if (app.group().all().size() == 0) {
+        // Проверка групп в базе данных
+        if (app.db().groups().size() == 0) {
+            // Выполнение предусловия создания группы
+            app.goTo().groupPage();
             app.group().create(new GroupData().withName(groupName));
-
         }
     }
 
     @Test
     public void testGroupDeletion() throws Exception {
 
-        Groups before = app.group().all();
+        //Groups before = app.group().all();
+        Groups before = app.db().groups();
+
         GroupData deleteGroup = before.iterator().next();
         app.group().delete(deleteGroup);
         assertThat(app.group().count(), equalTo(before.size() - 1));
-        Groups after = app.group().all();
+
+        //Groups after = app.group().all();
+        Groups after = app.db().groups();
+
         assertThat(after, equalTo(before.withOut(deleteGroup)));
 
         }

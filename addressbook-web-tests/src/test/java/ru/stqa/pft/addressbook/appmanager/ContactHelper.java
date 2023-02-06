@@ -28,10 +28,10 @@ public class ContactHelper extends HelperBase {
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
-        //type(By.name("nickname"), contactData.getNickname());
-        //type(By.name("company"), contactData.getCompany());
-        //type(By.name("home"), contactData.getTelephone());
-        //type(By.name("email"), contactData.getEmail());
+        type(By.name("nickname"), contactData.getNickname());
+        type(By.name("company"), contactData.getCompany());
+        type(By.name("home"), contactData.getTelephone());
+        type(By.name("email"), contactData.getEmail());
         attach(By.name("photo"), contactData.getPhoto());
 
         if (creation) {
