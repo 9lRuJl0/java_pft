@@ -42,6 +42,7 @@ public class ModificationContactTest  extends TestBase {
             ContactData contact = new ContactData().
                     withId(modifiedContact.getId()).withFirstname("Yaroslav").withLastname("Sorokin").withNickname("NEO").withCompany("MetaCortex").withTelephone("312-555-0690").withEmail("test@test.com");
             app.contact().modify(contact);
+            app.goTo().gotoHomePage();
             assertThat(app.contact().count(), equalTo(before.size()));
             Contacts after = app.db().contacts(); //Проверка списка контактов после модификации в бд
             assertThat(after, equalTo(before.withOut(modifiedContact).withAdded(contact)));

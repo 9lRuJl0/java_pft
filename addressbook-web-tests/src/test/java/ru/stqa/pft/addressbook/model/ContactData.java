@@ -18,7 +18,7 @@ public class ContactData {
     @XStreamOmitField
     @Id
     @Column(name = "id")
-    private int id =  Integer.MAX_VALUE;
+    private int id = Integer.MAX_VALUE;
     @Expose
     @Column(name = "firstname", columnDefinition = "Text")
     private String firstname;
@@ -63,26 +63,30 @@ public class ContactData {
     private String deprecated;
 
 
-
-
-
-
     public int getId() {
         return id;
     }
+
     public String getFirstname() {
         return firstname;
     }
+
     public String getLastname() {
         return lastname;
     }
-    public String getNickname() { return nickname; }
+
+    public String getNickname() {
+        return nickname;
+    }
+
     public String getCompany() {
         return company;
     }
+
     public String getTelephone() {
         return telephone;
     }
+
     public String getEmail() {
         return email;
     }
@@ -90,37 +94,46 @@ public class ContactData {
     public String getGroup() {
         return group;
     }
+
     public String getHomePhone() {
         return homePhone;
     }
+
     public String getMobilePhone() {
         return mobilePhone;
     }
+
     public String getWorkPhone() {
         return workPhone;
     }
+
     public String getAllPhones() {
         return allPhones;
     }
+
     public String getEmail2() {
         return email2;
     }
+
     public String getEmail3() {
         return email3;
     }
+
     public String getAllemail() {
         return allEmail;
     }
-    public String getAddress() { return address;}
-    public String getPhone2() {
-        return phone2  ;
+
+    public String getAddress() {
+        return address;
     }
 
-    public File getPhoto() { return new File (photo);}
+    public String getPhone2() {
+        return phone2;
+    }
 
-
-
-
+    public File getPhoto() {
+        return new File(photo);
+    }
 
     public String getDeprecated() {
         return deprecated;
@@ -130,38 +143,47 @@ public class ContactData {
         this.id = id;
         return this;
     }
+
     public ContactData withFirstname(String firstname) {
         this.firstname = firstname;
         return this;
     }
+
     public ContactData withLastname(String lastname) {
         this.lastname = lastname;
         return this;
     }
+
     public ContactData withNickname(String nickname) {
         this.nickname = nickname;
         return this;
     }
+
     public ContactData withCompany(String company) {
         this.company = company;
         return this;
     }
+
     public ContactData withTelephone(String telephone) {
         this.telephone = telephone;
         return this;
     }
+
     public ContactData withEmail(String email) {
         this.email = email;
         return this;
     }
+
     public void setId(int id) {
 
         this.id = id;
     }
+
     public ContactData withGroup(String group) {
         this.group = group;
         return this;
     }
+
     public ContactData withHomePhone(String homePhone) {
         this.homePhone = homePhone;
         return this;
@@ -171,7 +193,8 @@ public class ContactData {
         this.mobilePhone = mobilePhone;
         return this;
     }
-    public ContactData withWorkPhone (String workPhone) {
+
+    public ContactData withWorkPhone(String workPhone) {
         this.workPhone = workPhone;
         return this;
     }
@@ -209,7 +232,7 @@ public class ContactData {
     public ContactData withPhone2(String phone2) {
         this.phone2 = phone2;
         return this;
-}
+    }
 
     public ContactData withDeprecated(String deprecated) {
         this.deprecated = deprecated;
@@ -223,23 +246,24 @@ public class ContactData {
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", photo='" + photo + '\'' +
                 '}';
     }
-
-
-
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(nickname, that.nickname) && Objects.equals(company, that.company) && Objects.equals(email, that.email) && Objects.equals(homePhone, that.homePhone) && Objects.equals(mobilePhone, that.mobilePhone) && Objects.equals(workPhone, that.workPhone) && Objects.equals(photo, that.photo);
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname, nickname, company, email, homePhone, mobilePhone, workPhone, photo);
+        return Objects.hash(id, firstname, lastname);
     }
+
 }
+
+
+
+

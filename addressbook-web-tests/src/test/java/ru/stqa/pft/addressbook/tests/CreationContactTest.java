@@ -79,7 +79,7 @@ public class CreationContactTest extends TestBase {
   }
 
 
-  @Test()
+  @Test
 
   public void testCreationContact(ContactData contact ) {
     app.goTo().gotoHomePage();
