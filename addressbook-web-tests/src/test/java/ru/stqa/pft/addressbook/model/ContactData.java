@@ -59,6 +59,8 @@ public class ContactData {
     private String phone2;
     @Column(name = "photo", columnDefinition = "Text")
     private String photo;
+    @Column(name = "deprecated", columnDefinition = "Datetime")
+    private String deprecated;
 
 
 
@@ -74,8 +76,7 @@ public class ContactData {
     public String getLastname() {
         return lastname;
     }
-    public String getNickname()
-    { return nickname; }
+    public String getNickname() { return nickname; }
     public String getCompany() {
         return company;
     }
@@ -110,22 +111,20 @@ public class ContactData {
     public String getAllemail() {
         return allEmail;
     }
-    public String getAddress() {
-
-        return address;
-    }
+    public String getAddress() { return address;}
     public String getPhone2() {
         return phone2  ;
     }
-    public File getPhoto() {
-        return new File (photo);
+
+    public File getPhoto() { return new File (photo);}
+
+
+
+
+
+    public String getDeprecated() {
+        return deprecated;
     }
-
-
-
-
-
-
 
     public ContactData withId(int id) {
         this.id = id;
@@ -212,19 +211,11 @@ public class ContactData {
         return this;
 }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(nickname, that.nickname) && Objects.equals(company, that.company) && Objects.equals(telephone, that.telephone) && Objects.equals(email, that.email) && Objects.equals(group, that.group) && Objects.equals(homePhone, that.homePhone) && Objects.equals(mobilePhone, that.mobilePhone) && Objects.equals(workPhone, that.workPhone) && Objects.equals(allPhones, that.allPhones) && Objects.equals(email2, that.email2) && Objects.equals(email3, that.email3) && Objects.equals(allEmail, that.allEmail) && Objects.equals(address, that.address) && Objects.equals(phone2, that.phone2) && Objects.equals(photo, that.photo);
+    public ContactData withDeprecated(String deprecated) {
+        this.deprecated = deprecated;
+        return this;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstname, lastname, nickname, company, telephone, email, group, homePhone, mobilePhone, workPhone, allPhones, email2, email3, allEmail, address, phone2, photo);
-    }
 
     @Override
     public String toString() {
@@ -232,21 +223,23 @@ public class ContactData {
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", company='" + company + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", email='" + email + '\'' +
-                ", group='" + group + '\'' +
-                ", homePhone='" + homePhone + '\'' +
-                ", mobilePhone='" + mobilePhone + '\'' +
-                ", workPhone='" + workPhone + '\'' +
-                ", allPhones='" + allPhones + '\'' +
-                ", email2='" + email2 + '\'' +
-                ", email3='" + email3 + '\'' +
-                ", allEmail='" + allEmail + '\'' +
-                ", address='" + address + '\'' +
-                ", phone2='" + phone2 + '\'' +
                 ", photo='" + photo + '\'' +
                 '}';
+    }
+
+
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(nickname, that.nickname) && Objects.equals(company, that.company) && Objects.equals(email, that.email) && Objects.equals(homePhone, that.homePhone) && Objects.equals(mobilePhone, that.mobilePhone) && Objects.equals(workPhone, that.workPhone) && Objects.equals(photo, that.photo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstname, lastname, nickname, company, email, homePhone, mobilePhone, workPhone, photo);
     }
 }

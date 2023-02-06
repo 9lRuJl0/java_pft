@@ -23,9 +23,7 @@ public class DeletionContactTest extends TestBase {
             app.group().create(new GroupData().withName(groupName));
 
     }
-        //app.goTo().gotoHomePage();
-       // if (app.contact().all().size() == 0)
-
+        // Выполнение предусловия создания контакта
         if(app.db().contacts().size() == 0) {
             app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson")
                     .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690")
@@ -37,21 +35,14 @@ public class DeletionContactTest extends TestBase {
 
     @Test
     public void testDeletionContact() {
-
-        //Contacts before = app.contact().all();
-
-        Contacts before = app.db().contacts();
-
-        ContactData deleteContact = before.iterator().next(); //Проверка списка контактов до удаления в бд
+        app.goTo().gotoHomePage();
+        Contacts before = app.db().contacts(); //Проверка списка контактов до удаления в бд
+        ContactData deleteContact = before.iterator().next();
         app.contact().delete(deleteContact);
-        assertThat(app.contact().count(),  equalTo(before.size() - 1));
-
-        //Contacts after = app.contact().all();
-
+        app.goTo().gotoHomePage();
         Contacts after = app.db().contacts(); //Проверка списка контактов после удаления в бд
+        assertThat(app.contact().count(),  equalTo(before.size() - 1));
         assertThat(after, equalTo(before.withOut(deleteContact)));
-
-
 
     }
 
