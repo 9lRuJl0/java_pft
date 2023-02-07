@@ -1,5 +1,4 @@
 package ru.stqa.pft.addressbook.appmanager;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,8 +6,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
-
 import java.util.List;
+
+
 
 public class ContactHelper extends HelperBase {
 
@@ -17,8 +17,6 @@ public class ContactHelper extends HelperBase {
 
         super(wd);
     }
-
-
 
     public void gotoEnter() {
 
@@ -43,7 +41,6 @@ public class ContactHelper extends HelperBase {
         }
     }
 
-
     public void type(By locator, String text) {
         wd.findElement(locator).click();
         wd.findElement(locator).clear();
@@ -65,9 +62,10 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void selectEdit() {
+    public void selectEdit(int id) {
 
-        click(By.xpath("//img[@alt='Edit']"));
+        //click(By.xpath("//img[@alt='Edit']"));
+        wd.findElement(By.xpath("//a[@href='edit.php?id=" + id + "']")).click();
     }
 
     public void selectUpdate() {
@@ -106,7 +104,7 @@ public class ContactHelper extends HelperBase {
 
     public void modify(ContactData contact) {
         selectContactById(contact.getId());
-        selectEdit();
+        selectEdit(contact.getId());
         fillContactForm(contact, false);
         selectUpdate();
         contactCache = null;

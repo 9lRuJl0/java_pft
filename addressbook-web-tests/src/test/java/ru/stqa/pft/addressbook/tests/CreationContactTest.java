@@ -79,14 +79,14 @@ public class CreationContactTest extends TestBase {
   }
 
 
-  @Test
+  @Test(dataProvider = "validContactsFromJson")
 
   public void testCreationContact(ContactData contact ) {
     app.goTo().gotoHomePage();
-    Contacts before = app.db().contacts();
+    Contacts before = app.db().contacts(); //Проверка списка контактов в бд до создания
     app.contact().create(contact);
     assertThat(app.contact().count(),  equalTo(before.size() + 1));
-    Contacts after = app.db().contacts();
+    Contacts after = app.db().contacts(); //Проверка списка контактов в бд после создания
     assertThat(after, equalTo(
             before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
 
