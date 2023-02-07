@@ -27,12 +27,15 @@ dependencies {
         }
         if (project.hasProperty('target')) {
             systemProperty 'target', "${browser}"
+        }
+        if (project.hasProperty('verifyUI')) {
+            systemProperty 'verifyUI', "${verifyUI}"
+        }
     }
-}
 
 
     task testContacts(type: Test) {
-    useTestNG {
+        useTestNG {
             suites 'src/test/java/ru/stqa/pft/addressbook/resources/testng-contacts.xml'
         }
         if (project.hasProperty('browser')) {
@@ -40,6 +43,7 @@ dependencies {
         }
         if (project.hasProperty('target')) {
             systemProperty 'target', "${browser}"
+        }
+
     }
-}
 
