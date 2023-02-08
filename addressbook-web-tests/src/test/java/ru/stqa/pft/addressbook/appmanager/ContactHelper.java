@@ -1,4 +1,5 @@
 package ru.stqa.pft.addressbook.appmanager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+
 import java.util.List;
 
 
@@ -26,15 +28,16 @@ public class ContactHelper extends HelperBase {
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
-        type(By.name("nickname"), contactData.getNickname());
-        type(By.name("company"), contactData.getCompany());
-        type(By.name("home"), contactData.getTelephone());
-        type(By.name("email"), contactData.getEmail());
-        //attach(By.name("photo"), contactData.getPhoto());
+//        type(By.name("nickname"), contactData.getNickname());
+//        type(By.name("company"), contactData.getCompany());
+//        type(By.name("home"), contactData.getTelephone());
+//        type(By.name("email"), contactData.getEmail());
+        attach(By.name("photo"), contactData.getPhoto());
 
         if (creation) {
-            if (contactData.getGroup() != null) {
-                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            if (contactData.getGroups().size() > 0) {
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+               new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
             }
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));

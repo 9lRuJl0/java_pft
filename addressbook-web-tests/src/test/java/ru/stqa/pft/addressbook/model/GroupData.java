@@ -3,13 +3,11 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.HashSet;
 import java.util.Objects;
-
-
+import java.util.Set;
 
 
 @XStreamAlias("group")
@@ -31,6 +29,48 @@ public class GroupData {
     private  String footer;
 
 
+
+    @ManyToMany(mappedBy = "groups")
+    private Set<ContactData> contacts = new HashSet<ContactData>();
+
+    public Set<ContactData> getContacts() {
+        return contacts;
+    }
+
+    public GroupData withHeader(String header) {
+        this.header = header;
+        return this;
+    }
+    public GroupData withFooter(String footer) {
+        this.footer = footer;
+        return this;
+    }
+
+    public GroupData withId(int id) {
+        this.id = id;
+        return this;
+
+    }
+    public String getName() {
+
+        return name;
+    }
+
+    public String getHeader() {
+
+        return header;
+    }
+
+    public String getFooter() {
+
+        return footer;
+    }
+    public int getId() {
+
+        return id;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -49,39 +89,6 @@ public class GroupData {
         return this;
     }
 
-    public GroupData withHeader(String header) {
-        this.header = header;
-        return this;
-    }
-
-    public GroupData withFooter(String footer) {
-        this.footer = footer;
-        return this;
-    }
-
-
-    public GroupData withId(int id) {
-        this.id = id;
-        return this;
-
-    }
-
-
-    public String getName() {
-
-        return name;
-    }
-
-    public String getHeader() {
-
-        return header;
-    }
-
-    public String getFooter() {
-
-        return footer;
-    }
-
     @Override
     public String toString() {
         return "GroupData{" +
@@ -89,9 +96,6 @@ public class GroupData {
                 ", name='" + name + '\'' +
                 '}';
     }
-
-    public int getId() {
-
-        return id;
-    }
 }
+
+
