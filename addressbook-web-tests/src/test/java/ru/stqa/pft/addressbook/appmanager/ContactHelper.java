@@ -7,9 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.List;
-
+import java.util.Set;
 
 
 public class ContactHelper extends HelperBase {
@@ -82,11 +83,6 @@ public class ContactHelper extends HelperBase {
             wd.findElements(By.name("selected[]")).get(index).click();
         }
 
-    }
-
-    public void selectContactById(int id) {
-       wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
-         //wd.findElement(By.xpath("input[value='" + id + "']")).click();
     }
 
     public void gotoHomePage() {
@@ -191,6 +187,62 @@ public class ContactHelper extends HelperBase {
     //wd.findElement(By.xpath(String.format("//tr[.//input[@value='%s']]/td[8]/a", id))).click();
     //wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
 
+
+
+    //Метод добавления конката в группу на главной странице
+//    public void selectAddToGroup(GroupData group) {
+//        click(By.name("to_group"));
+//       new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(group.getName());
+//        click(By.name("add"));
+//    }
+    public void selectGroupList() {
+        click(By.name("to_group"));
+
+    }
+
+    public void selectAdd (String name) {
+        click(By.name("add"));
+    }
+
+
+
+    //Метод выбора группы где сохранили контакт
+    public void selectGroup (GroupData group) {
+        click(By.name("group"));
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName());
+    }
+
+    //Метод проверки при покаже всех групп
+    public void selectAllGroup(){
+        click(By.name("group"));
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText("[all]");
+
+    }
+
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+    }
+
+    //Собрал все методы выстроил логическую цепочку
+//    public void addGroup (ContactData contact, GroupData group) {
+//        gotoHomePage();
+//        selectContactById(contact.getId());
+//        selectGroupList();
+//        selectAdd();
+//        gotoHomePage();
+//
+//    }
+
+    public ContactData contactGroup(Contacts contacts) {
+
+        for (ContactData contact: contacts) {
+            Set<GroupData> contactInGroup = contact.getGroups();
+            if (contactInGroup.size() > 0) {
+                return contact;
+            }
+        }
+        return null;
+    }
 
 
 }
