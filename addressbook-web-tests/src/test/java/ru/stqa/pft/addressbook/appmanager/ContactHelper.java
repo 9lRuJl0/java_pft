@@ -220,18 +220,19 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectContactById(int id) {
+
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
-    //Собрал все методы выстроил логическую цепочку
-//    public void addGroup (ContactData contact, GroupData group) {
-//        gotoHomePage();
-//        selectContactById(contact.getId());
-//        selectGroupList();
-//        selectAdd();
-//        gotoHomePage();
-//
-//    }
+
+    public void selectGroupToContact(int id) {
+        wd.findElement(By.cssSelector("select[name='group']>option[value='" + id + "']")).click();
+        //wd.findElement(By.xpath("//option[@value='" + id + "']")).click();
+    }
+
+    public void removeContactGroup() {
+        click(By.xpath("//input[@name='remove']"));
+    }
 
     public ContactData contactGroup(Contacts contacts) {
 
@@ -244,6 +245,15 @@ public class ContactHelper extends HelperBase {
         return null;
     }
 
+    //Собрал все методы выстроил логическую цепочку
+//    public void addGroup (ContactData contact, GroupData group) {
+//        gotoHomePage();
+//        selectContactById(contact.getId());
+//        selectGroupList();
+//        selectAdd();
+//        gotoHomePage();
+//
+//    }
 
 }
 
