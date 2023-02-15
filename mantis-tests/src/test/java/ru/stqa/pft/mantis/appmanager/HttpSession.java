@@ -28,7 +28,7 @@ public class HttpSession {
 
     // метод для выполнения логина
     public boolean login(String username, String password) throws IOException {
-        HttpPost post = new HttpPost(app.getProperty("web.baseUrl") + "/login_page.php");
+        HttpPost post = new HttpPost(app.getProperty("web.baseUrl") + "login_page.php");
         List<NameValuePair> params = new ArrayList<NameValuePair>();
 
         // формирование параметров для тела запроса
@@ -55,7 +55,7 @@ public class HttpSession {
     }
     // проверка пользователя который вошел
     public boolean isLoggedInAs(String username) throws IOException {
-        HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "/my_view_page.php");
+        HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "my_view_page.php");
         CloseableHttpResponse response = httpclient.execute(get);
         String body = geTextFrom(response);
         return body.contains(String.format("<span id=\"logged-in-user\">%s</span>", username));
