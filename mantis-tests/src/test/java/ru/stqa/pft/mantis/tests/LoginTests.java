@@ -16,4 +16,3 @@ public class LoginTests extends TestBase{
         assertTrue(session.isLoggedInAs("administrator"));
     }
 }
-
