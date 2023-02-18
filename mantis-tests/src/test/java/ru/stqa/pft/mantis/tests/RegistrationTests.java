@@ -21,9 +21,9 @@ public class RegistrationTests extends TestBase {
     @Test
     public void testRegistration() throws MessagingException, IOException {
         long now =System.currentTimeMillis();
-        String user = String.format("user1", now) ;
+        String user = String.format("user%s", now) ;
         String password = "password";
-        String email = String.format("user@localhost.localdomain", now) ;
+        String email = String.format("user%s@localhost", now) ;
         app.james().createUser(user, password);
         app.registration().start(user, email);
 
@@ -38,7 +38,7 @@ public class RegistrationTests extends TestBase {
 
     private String findConfirmationLink(List<MailMessage> mailMessages, String email) {
     MailMessage mailMessage = mailMessages.stream().filter((m) -> m.to.equals(email)).findFirst().get();
-        VerbalExpression regex = VerbalExpression.regex().find("http//").nonSpace().oneOrMore().build();
+        VerbalExpression regex = VerbalExpression.regex().find("http://").nonSpace().oneOrMore().build();
         return regex.getText(mailMessage.text);
     }
 
