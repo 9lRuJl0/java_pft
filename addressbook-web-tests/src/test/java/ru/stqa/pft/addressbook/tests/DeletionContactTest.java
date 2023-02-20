@@ -27,7 +27,7 @@ public class DeletionContactTest extends TestBase {
         if(app.db().contacts().size() == 0) {
             app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson")
                     .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690")
-                    .withEmail("test@test.com"));
+                    .withEmail("test@test.com"),false);
 
         }
 

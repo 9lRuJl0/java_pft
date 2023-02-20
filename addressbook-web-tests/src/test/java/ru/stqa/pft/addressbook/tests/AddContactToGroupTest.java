@@ -11,19 +11,30 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class AddContactToGroupTest extends TestBase {
 
     String groupName = "test1";
+
+
     @BeforeMethod
 
     public void ensurePreconditions() {
+        // Проверка контактов в бд
+        Contacts contacts = app.db().contacts();
         // Выполнение предусловия создания группы
         if (app.db().groups().size() == 0) {
-        }
         app.goTo().groupPage();
         app.group().create(new GroupData().withName(groupName));
+        }
         // Выполнение предусловия создания контакта
-        if(app.db().contacts().size() == 0) {
-            app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson")
-                    .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690")
-                    .withEmail("test@test.com"));
+//        if(app.db().contacts().size() == 0) {
+//            app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson")
+//                    .withNickname("NEO"). withCompany("MetaCortex").withTelephone("312-555-0690")
+//                    .withEmail("test@test.com"));
+        if (app.db().contacts().size() == 0 || contactGroup(contacts) == null) {
+            app.contact().create(new ContactData()
+                    .withFirstname("First")
+                    .withLastname("Last"), false);
+
+            app.goTo().gotoHomePage();
+
         }
     }
 
@@ -32,40 +43,42 @@ public class AddContactToGroupTest extends TestBase {
     public void testAddContactToGroup() {
 
         Contacts contacts = app.db().contacts();
-        ContactData contactGroup = contactGroup(contacts);
-        GroupData addGroup = noGroupContact();
-        ContactData before = contactGroup.inGroup(addGroup);
-        app.goTo().gotoHomePage();
-        app.contact().selectContactById(contactGroup.getId());
-        app.contact().selectAdd(addGroup.getName());
-        app.goTo().gotoHomePage();
-        ContactData after = contactGroup.inGroup(addGroup);
-        assertThat(after, equalTo(before));
-
+        ContactData contactsAddGroup = contactGroup(contacts);
+        GroupData addGroup = addGroupContact();
+        Contacts before = contacts.withOut(contactsAddGroup);
+        app.contact().selectContactById(contactsAddGroup.getId());
+        app.contact().selectAdd(addGroup.name());
+        ContactData updateContact = contactsAddGroup.inGroup(addGroup);
+        Contacts after = app.db().contacts();
+        assertThat(after, equalTo(before.withAdded(updateContact)));
 
     }
 
-    public GroupData noGroupContact() {
-        Contacts contacts = app.db().contacts();
-        Groups groupContact = contactGroup(contacts).getGroups();
-        Groups listGroups = app.db().groups();
-        listGroups.removeAll(groupContact);
-        GroupData group = listGroups.iterator().next();
-
-        return group;
-    }
-
-    public ContactData contactGroup(Contacts contacts) {
-        for (ContactData contact : contacts) {
-            Set<GroupData> ContactGroup = contact.getGroups();
-            int listGroups = app.db().groups().size();
-            if (listGroups > ContactGroup.size()) {
+    public ContactData contactGroup(Contacts groupContact){
+        for (ContactData contact : groupContact) {
+            Set<GroupData> contactsGroups = contact.getGroups();
+            int allGroups = app.db().groups().size();
+            if (allGroups > contactsGroups.size()) {
                 return contact;
             }
         }
         return null;
 
-     }
+    }
+
+    public GroupData addGroupContact() {
+        Contacts contacts = app.db().contacts();
+        Groups groups   = app.db().groups();
+        Groups groupsAddContact = contactGroup(contacts).getGroups();
+        //удаляем группы которые есть у контакта
+        groups.removeAll(groupsAddContact);
+        //группа для добавления
+        GroupData groupAddСontact = groups.iterator().next();
+        return groupAddСontact;
+    }
+
+
+
 }
 
 

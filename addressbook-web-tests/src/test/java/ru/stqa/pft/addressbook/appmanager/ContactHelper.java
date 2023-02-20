@@ -33,7 +33,7 @@ public class ContactHelper extends HelperBase {
 //        type(By.name("company"), contactData.getCompany());
 //        type(By.name("home"), contactData.getTelephone());
 //        type(By.name("email"), contactData.getEmail());
-        attach(By.name("photo"), contactData.getPhoto());
+//        attach(By.name("photo"), contactData.getPhoto());
 
         if (creation) {
             if (contactData.getGroups().size() > 0) {
@@ -92,7 +92,7 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("home"));
     }
 
-    public void create(ContactData contact) {
+    public void create(ContactData contact,  boolean creation) {
         gotoAddNew();
         fillContactForm(contact, true);
         gotoEnter();
@@ -200,11 +200,10 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void selectAdd (String name) {
-        click(By.name("add"));
+    public void selectAdd (String nameGroup) {
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(nameGroup);
+        click(By.xpath("//input[@name='add']"));
     }
-
-
 
     //Метод выбора группы где сохранили контакт
     public void selectGroup (GroupData group) {
@@ -218,19 +217,15 @@ public class ContactHelper extends HelperBase {
         new Select(wd.findElement(By.name("group"))).selectByVisibleText("[all]");
 
     }
-
     public void selectContactById(int id) {
 
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
-
-
     public void selectGroupToContact(int id) {
         wd.findElement(By.cssSelector("select[name='group']>option[value='" + id + "']")).click();
-        //wd.findElement(By.xpath("//option[@value='" + id + "']")).click();
     }
 
-    public void removeContactGroup() {
+    public void deletionToGroup() {
         click(By.xpath("//input[@name='remove']"));
     }
 
@@ -244,16 +239,6 @@ public class ContactHelper extends HelperBase {
         }
         return null;
     }
-
-    //Собрал все методы выстроил логическую цепочку
-//    public void addGroup (ContactData contact, GroupData group) {
-//        gotoHomePage();
-//        selectContactById(contact.getId());
-//        selectGroupList();
-//        selectAdd();
-//        gotoHomePage();
-//
-//    }
 
 }
 

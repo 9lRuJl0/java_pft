@@ -70,6 +70,10 @@ public class GroupData {
         return id;
     }
 
+    public String name() {
+        return name;
+    }
+
 
     @Override
     public boolean equals(Object o) {

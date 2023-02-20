@@ -26,7 +26,7 @@ public class ContactPhoneTest  extends TestBase {
         if (app.contact().all().size() == 0) {
         app.contact().create(new ContactData().withFirstname("Tomas").withLastname("Anderson").withNickname("NEO"). withCompany("MetaCortex").withAddress("Wall street, house 1")
                 .withHomePhone("312-555-0690").withMobilePhone("555555").withWorkPhone("1112233")
-                .withEmail("test@test.com").withEmail2("test@test2.com").withEmail3("test@test3.com"));
+                .withEmail("test@test.com").withEmail2("test@test2.com").withEmail3("test@test3.com"), false);
 
     }
 

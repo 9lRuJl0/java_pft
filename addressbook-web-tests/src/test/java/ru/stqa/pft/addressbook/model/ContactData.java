@@ -71,7 +71,6 @@ public class ContactData {
     public int getId() {
         return id;
     }
-
     public String getFirstname() {
         return firstname;
     }
@@ -111,7 +110,6 @@ public class ContactData {
     public String getPhone2() {
         return phone2;
     }
-
     public File getPhoto() {return new File(photo);}
 
     public String getDeprecated() {return deprecated;}
@@ -220,6 +218,11 @@ public class ContactData {
 
     public ContactData inGroup(GroupData group) {
         groups.add(group);
+        return this;
+    }
+
+    public ContactData deletionToGroup(GroupData group) {
+        groups.remove(group);
         return this;
     }
 
