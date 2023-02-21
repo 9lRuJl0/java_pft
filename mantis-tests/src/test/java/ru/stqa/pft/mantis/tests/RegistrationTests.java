@@ -2,6 +2,7 @@ package ru.stqa.pft.mantis.tests;
 
 import org.testng.annotations.Test;
 import ru.lanwen.verbalregex.VerbalExpression;
+import ru.stqa.pft.mantis.appmanager.ApplicationManager;
 import ru.stqa.pft.mantis.model.MailMessage;
 
 import javax.mail.MessagingException;

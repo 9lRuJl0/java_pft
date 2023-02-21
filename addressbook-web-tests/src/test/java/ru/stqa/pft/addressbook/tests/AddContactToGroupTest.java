@@ -30,8 +30,8 @@ public class AddContactToGroupTest extends TestBase {
 //                    .withEmail("test@test.com"));
         if (app.db().contacts().size() == 0 || contactGroup(contacts) == null) {
             app.contact().create(new ContactData()
-                    .withFirstname("First")
-                    .withLastname("Last"), false);
+                    .withFirstname("Elon")
+                    .withLastname("Musk"), false);
 
             app.goTo().gotoHomePage();
 

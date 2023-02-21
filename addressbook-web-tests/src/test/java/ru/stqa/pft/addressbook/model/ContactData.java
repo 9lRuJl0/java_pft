@@ -227,13 +227,13 @@ public class ContactData {
     }
 
 
-
     @Override
     public String toString() {
         return "ContactData{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
+                ", groups=" + groups +
                 '}';
     }
 
@@ -242,15 +242,13 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(groups, that.groups);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname);
+        return Objects.hash(id, firstname, lastname, groups);
     }
-
-
 }
 
 

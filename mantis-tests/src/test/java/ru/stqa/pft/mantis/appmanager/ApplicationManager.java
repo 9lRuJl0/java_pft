@@ -1,5 +1,6 @@
 package ru.stqa.pft.mantis.appmanager;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -22,6 +23,8 @@ public class ApplicationManager {
     private FtpHelper ftp;
     private MailHelper mailHelper;
     private JamesHelper jamesHelper ;
+
+    private UserHelper userHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -93,4 +96,15 @@ public class ApplicationManager {
         return jamesHelper;
     }
 
+    public UserHelper user() {
+        if (userHelper == null) {
+            userHelper = new UserHelper(this);
+        }
+        return userHelper;
+    }
+
+    public String getUsersName() {
+        String users = wd.findElement(By.name("username")).getAttribute("value");
+        return users;
+    }
 }
