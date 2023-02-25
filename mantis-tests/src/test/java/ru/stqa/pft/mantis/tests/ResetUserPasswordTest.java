@@ -6,10 +6,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.model.MailMessage;
-
 import javax.mail.MessagingException;
 import java.io.IOException;
 import java.util.List;
+
+
 
 public class ResetUserPasswordTest extends TestBase {
 
@@ -21,7 +22,7 @@ public class ResetUserPasswordTest extends TestBase {
 
     String password = "Vzlom_Pentagona";
     String users = app.getUsersName();
-    String email = String.format("%s@localhost", users); //.localdomain
+    String email = String.format("%s@localhost.localdomain", users); //.localdomain
 
     @Test
     public void testResetUserPassword() throws MessagingException, IOException {

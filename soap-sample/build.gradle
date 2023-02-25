@@ -1,18 +1,17 @@
 apply plugin: 'java'
 
-repositories {
+
+repositories {//подключение места откуда будет тянутся библиотека
     mavenCentral()
 }
-dependencies {
-    implementation 'org.testng:testng:7.6.1'
-    implementation 'org.testng:testng:7.7.0'
-    implementation 'org.testng:testng:7.7.0'
-    implementation 'javax.xml.ws:jaxws-api:2.3.1'
-    implementation 'com.sun.xml.ws:jaxws-ri:2.3.3'
 
+dependencies {
+    implementation("org.testng:testng:6.9.10")
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+    implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
 
 }
-    buildscript{
+buildscript{
     repositories{
         jcenter()
         mavenCentral()
@@ -24,11 +23,11 @@ dependencies {
 
 apply plugin: 'no.nils.wsdl2java'
 
-    wsdl2java {
-   // generatedWsdlDir = file("src/main/java")  // target directory for generated source coude
+wsdl2java {
     wsdlDir = file("src/main/resources") // define to support incremental build
     wsdlsToGenerate = [   //  2d-array of wsdls and cxf-parameters
                           ["$projectDir/src/main/resources/geoipservice.wsdl"],
-
     ]
 }
+
+

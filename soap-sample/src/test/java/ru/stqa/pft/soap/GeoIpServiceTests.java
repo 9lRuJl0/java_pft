@@ -1,18 +1,28 @@
 package ru.stqa.pft.soap;
 
+import com.lavasoft.GeoIPService;
 import org.testng.annotations.Test;
 
-public class GeoIpServiceTests {
+import static org.testng.Assert.assertEquals;
 
+
+public class GeoIpServiceTests {
     @Test
-    public class GeoIpServiceTests {
-        GeoIP geoIP = new GeoIPService().getGeoIPServiceSoap12().getGeoIP("37.204.248.185");
-        assertEquals(geoIP.getCountryCode(), "RUS");
+    public void testMyIp() {
+        String geoIp = new GeoIPService().getGeoIPServiceSoap12().getIpLocation("37.204.248.185");
+
+        assertEquals(geoIp,"<GeoIP><Country>RU</Country><State>53</State></GeoIP>" );
+        System.out.println(geoIp);
     }
+
+
 
     @Test
     public void testInvalidIp() {
-        GeoIP geoIP = new GeoIPService().getGeoIPServiceSoap12().getGeoIP("37.204.248.xxx");
-        assertEquals(geoIP.getCountryCode(), "RUS");
+        String geoIp = new GeoIPService().getGeoIPServiceSoap12().getIpLocation("xxx.204.248.xx");
+
+        assertEquals(geoIp,"<GeoIP><Country>RU</Country><State>53</State></GeoIP>" );
+        System.out.println(geoIp);
+
     }
 }
