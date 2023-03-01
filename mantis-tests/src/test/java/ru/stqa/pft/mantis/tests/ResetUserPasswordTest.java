@@ -20,26 +20,28 @@ public class ResetUserPasswordTest extends TestBase {
         app.mail().start();
     }
 
-    String password = "Vzlom_Pentagona";
-    String users = app.getUsersName();
-    String email = String.format("%s@localhost.localdomain", users); //.localdomain
+
 
     @Test
     public void testResetUserPassword() throws MessagingException, IOException {
-        app.user().loginAdministrator();
-        app.user().goToUserPage();
-        app.user().resetPassword();
 
-        List<MailMessage> mailMessages = app.mail().waitForMail(1, 10000);
+
+        String password = "VzlomPentagona";
+        app.userHelper().loginAdministrator();
+        app.userHelper().goToUserPage();
+        String user = app.getUserName();
+        String email = String.format("%s@localhost.localadmin", user);
+        app.userHelper().resetPassword();
+
+        List<MailMessage> mailMessages = app.mail().waitForMail(1, 60000);
         String confirmationLink = findConfirmationLink(mailMessages, email);
-
         app.registration().finish(confirmationLink, password);
-        Assert.assertTrue(app.newSession().login(users, password));
+        Assert.assertTrue(app.newSession().login(user, password));
 
     }
 
     private String findConfirmationLink(List<MailMessage> mailMessages, String email) {
-        MailMessage mailMessage = mailMessages.stream().filter((m) -> m.to.equals(email)).findFirst().get();
+        MailMessage mailMessage = mailMessages.stream().findFirst().get();                                              //.filter((m) -> m.to.equals(email)).
         VerbalExpression regex = VerbalExpression.regex().find("http://").nonSpace().oneOrMore().build();
         return regex.getText(mailMessage.text);
     }

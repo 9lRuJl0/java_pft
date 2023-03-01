@@ -96,15 +96,15 @@ public class ApplicationManager {
         return jamesHelper;
     }
 
-    public UserHelper user() {
+    public UserHelper userHelper() {
         if (userHelper == null) {
             userHelper = new UserHelper(this);
         }
         return userHelper;
     }
 
-    public String getUsersName() {
-        String users = wd.findElement(By.name("username")).getAttribute("value");
-        return users;
+    public String getUserName() {
+        String user = wd.findElement(By.name("username")).getAttribute("value");
+        return user;
     }
 }
