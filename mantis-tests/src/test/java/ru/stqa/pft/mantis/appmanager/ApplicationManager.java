@@ -23,8 +23,10 @@ public class ApplicationManager {
     private FtpHelper ftp;
     private MailHelper mailHelper;
     private JamesHelper jamesHelper ;
-
     private UserHelper userHelper;
+    private SoapHelper soapHelper;
+
+
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -106,5 +108,13 @@ public class ApplicationManager {
     public String getUserName() {
         String user = wd.findElement(By.name("username")).getAttribute("value");
         return user;
+    }
+
+
+    public SoapHelper soap() {
+        if (soapHelper == null) {
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
     }
 }
