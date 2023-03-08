@@ -1,0 +1,26 @@
+[
+  {
+    "firstname": "Tomas",
+    "lastname": "Anderson",
+    "nickname": "NEO",
+    "company": "MetaCortex",
+    "telephone": "312-555-0690",
+    "email": "test@test.com"
+  },
+  {
+    "firstname": "Tomas",
+    "lastname": "Anderson",
+    "nickname": "NEO",
+    "company": "MetaCortex",
+    "telephone": "312-555-0690",
+    "email": "test@test.com"
+  },
+  {
+    "firstname": "Tomas",
+    "lastname": "Anderson",
+    "nickname": "NEO",
+    "company": "MetaCortex",
+    "telephone": "312-555-0690",
+    "email": "test@test.com"
+  }
+]

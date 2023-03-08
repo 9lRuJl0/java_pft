@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.CreationContactTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2023-03-07T16:30:08" hostname="DESKTOP-4D6FVP8" time="0.01">
+  <properties/>
+  <testcase name="testCreationContact[0](ContactData{id=2147483647, firstname='Tomas', lastname='Anderson', groups=[]})" classname="ru.stqa.pft.addressbook.tests.CreationContactTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreationContact[1](ContactData{id=2147483647, firstname='Tomas', lastname='Anderson', groups=[]})" classname="ru.stqa.pft.addressbook.tests.CreationContactTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreationContact[2](ContactData{id=2147483647, firstname='Tomas', lastname='Anderson', groups=[]})" classname="ru.stqa.pft.addressbook.tests.CreationContactTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[19:30:08.258 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase - Stop testtestCreationContact
+19:30:08.261 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase - Stop testtestCreationContact
+19:30:08.263 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase - Stop testtestCreationContact
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
