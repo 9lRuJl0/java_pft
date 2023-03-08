@@ -45,7 +45,7 @@ dependencies {
             systemProperty 'browser', "${browser}"
         }
         if (project.hasProperty('target')) {
-            systemProperty 'target', "${browser}"
+            systemProperty 'target', "${target}"
         }
         if (project.hasProperty('platform')) {
             systemProperty 'platform', "${platform}"
